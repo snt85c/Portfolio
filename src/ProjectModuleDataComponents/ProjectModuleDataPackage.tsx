@@ -1,4 +1,7 @@
-import img1 from "./3.png"
+import TravelOrgMobile from "./3.png"
+import TravelOrgDesktop from "./1.png"
+import TicketmasterApiDesktop from "./ticketmasterApiDesktop.png"
+import TicketmasterApiMobile from "./ticketmasterApiMobile.png"
 
 export const TravelOrganizerData: iData = {
   name: "Travel Organizer",
@@ -10,8 +13,9 @@ export const TravelOrganizerData: iData = {
     githubCodeHref: "https://github.com/snt85c/TravelOrganizer",
     showCode: true,
   },
-  video:{
-    href:img1
+  img:{
+    desktop:TravelOrgDesktop,
+    mobile:TravelOrgMobile
   },
   devicons: {
     HTML: true,
@@ -40,8 +44,9 @@ export const TicketmasterApi: iData = {
     githubCodeHref: "https://github.com/snt85c/shopping-cart/",
     showCode: true,
   },
-  video:{
-    href:""
+  img:{
+    desktop:TicketmasterApiDesktop,
+    mobile:TicketmasterApiMobile
   },
   devicons: {
     HTML: true,
@@ -78,13 +83,14 @@ export const ContactPageData: iData = {
     WEBPACK: false,
     dependencies:["framer-motion", "react-intersection-observer"]
   },
-  video:{
-    href:""
+  img:{
+    desktop:"",
+    mobile:""
   },
   href: {
     githubLiveHref: "",
     showLive: false,
-    githubCodeHref: "",
+    githubCodeHref: "https://github.com/snt85c/Portfolio",
     showCode: true,
   },
 };
@@ -94,11 +100,12 @@ export interface iData {
   details: string;
   devicons: iDevicons;
   href: iHref;
-  video:iVideo;
+  img:iImage;
 }
 
-export interface iVideo{
-  href:string
+export interface iImage{
+  desktop:string,
+  mobile:string
 }
 export interface iHref {
   githubLiveHref: string;

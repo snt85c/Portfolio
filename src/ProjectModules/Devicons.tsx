@@ -2,8 +2,8 @@ import { iDevicons } from "../ProjectModuleDataComponents/ProjectModuleDataPacka
 
 export default function Devicons(props: { icons?: iDevicons }) {
 
-  const  WIDTH:number = 35
-  const  HEIGHT:number = 35
+  const  WIDTH:number = 30
+  const  HEIGHT:number = 30
   
   let dependencies = props.icons?.dependencies.map((dependency,i)=>{
     return <span className="px-2 py-1 bg-slate-800/75 rounded-full text-[0.7rem] ml-1" key={i}>#{dependency}</span>
@@ -16,7 +16,7 @@ export default function Devicons(props: { icons?: iDevicons }) {
       </div>
       <div className="flex justify-center items-center mb-3 text-white">{dependencies}</div>
       <div
-        className="flex flex-row gap-1
+        className="flex justify-center items-center flex-row gap-1
       "
       >
         {props.icons?.HTML && (
