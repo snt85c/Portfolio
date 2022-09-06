@@ -1,4 +1,4 @@
-ui changes, changes interface iData details type from string to JSX.Element, fix lag in animation
+ui changes, changes interface iData details type from string to JSX.Element, fix tsparticles lag
 
 linear gradient in projectModule moved to 180deg, in order to give a more homogeneous style to the background. the color now is diffused from the bottom (180deg), instead of coming from the side  
 
@@ -6,6 +6,6 @@ add data for Taskmanager
 
 iData details has been changed from type string to type JSX.Element, this way im able to style the data how i want (eg: some words can be highlighted now)
 
-lag in animation was detected and pinpointed to the TsParticles component. the numbers of prticle have ben halved from 80 to 40, as well as the fpsLimit brougt from 120 to 30. to keep some style on screen, particles.links.distance is now 200
+lag in animation was detected and pinpointed to the TsParticles component. the fpsLimit brougt from 120 to 30 and pauseOnOutsideTheViewPort is now set to true, so that it will stop automatically and not interfere with the rest of the animations. particles numnber can be lowered if needed as well 
 
 animatePresence has been removed, as there is no need for it.
