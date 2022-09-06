@@ -1,0 +1,13 @@
+add tsParticles, useRef instead of useState, cleanup on useEffect,ui changes
+
+tsParticles has been added as background effect on PresentationPage.tsx. the speed of the particles has been decreased to give a better effect, but it was noticed that it could cause lag issues.
+
+useEffect now hve cleanup by using abortController.abort() on return
+
+useRef has been added instead of useState to control isAlreadyVisited, as we dont want to trigger a re-render since it create issus with the motion.div ()
+
+ScrollIcon are now static, as removing them can cause re-render
+
+add data for WeatherApp
+
+props.data.name is now inserted in the same div with props.data.details and GithubLinks

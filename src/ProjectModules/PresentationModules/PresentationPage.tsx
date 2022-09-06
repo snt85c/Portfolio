@@ -1,34 +1,35 @@
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import SocialButtons from "./SocialButtons";
 import ScrollDown from "../ScrollDown";
+import { ParticlesTest } from "../Particles";
 
 export default function PresentationModule() {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, delay: 0 });
-  const [isAlreadyVisited, setIsAlreadyVisited] = useState(false);
-  const [isScrollDownRemoved, setIsScrollDownRemoved] = useState(false);
+  // const [isAlreadyVisited, setIsAlreadyVisited] = useState(false);
+  // let isAlreadyVisited = false;
+  const isAlreadyVisited = useRef(false);
 
   const firstModuleVariant = {
     visible: { x: "0", opacity: 1 },
   };
 
   useEffect(() => {
+    let abortController = new AbortController();
+
     //if intersection-observer determines that inView is true or isAlreadyVisited state is true, then set it to variant/visible, then set isAlreadyVisited to true after 2000ms. This allows for the animation to happen only once during the first render.
     if (inView || isAlreadyVisited) {
       control.start("visible");
       setTimeout(() => {
-        setIsAlreadyVisited(true);
+        // setIsAlreadyVisited(true);
+        isAlreadyVisited.current = true;
       }, 2000);
     }
+    return abortController.abort();
   }, [control, inView]);
-
-  useEffect(() => {
-     //isAlreadyVisited changes to true after two seconds to keep the animation going, so this is triggered in the case when the page is not in view anymore (the user scrolled away), removing the scroll icon prompt, since it's not needed anymore
-    if (!inView && isAlreadyVisited) setIsScrollDownRemoved(true);
-  }, [inView, isAlreadyVisited]);
 
   return (
     <>
@@ -44,10 +45,14 @@ export default function PresentationModule() {
           //control is dependent on the variant
           transition={{ type: "tween", duration: 0.8 }}
           //tween is a simple slide animation, no bounce
-          className="flex flex-col border border-gray-500 m-5  justify-between
-           min-h-[98vh] pt-10 bg-black text-white text-[2rem] select-none"
+          className="flex flex-col  justify-between border border-gray-500 mx-5
+           min-h-[100vh] pt-10 pb-2 bg-black text-white text-[2rem] select-none"
+          //
         >
           <div className="flex flex-row">
+            <span className="absolute -z-10">
+              <ParticlesTest />
+            </span>
             <div className="flex flex-col mt-5 ml-5 w-full">
               <div className="text-[8vw] sm:text-[3rem] -mb-[1.5vh] leading-none">
                 Hi, i'm
@@ -87,7 +92,7 @@ export default function PresentationModule() {
                 is yet to come.
               </span>
             </div>
-            <ScrollDown removeScrollIcon={isScrollDownRemoved} />
+            <ScrollDown />
           </div>
         </motion.div>
       </AnimatePresence>

@@ -1,12 +1,14 @@
-import TravelOrgMobile from "./3.png"
-import TravelOrgDesktop from "./1.png"
+import TravelOrgMobile from "./TravelOrgMobile.png"
+import TravelOrgDesktop from "./TravelOrgDesktop.png"
 import TicketmasterApiDesktop from "./ticketmasterApiDesktop.png"
 import TicketmasterApiMobile from "./ticketmasterApiMobile.png"
+import weatherAppDesktop from "./weatherAppDesktop.png"
+import weatherAppMobile from "./weatherAppMobile.png"
 
 export const TravelOrganizerData: iData = {
   name: "Travel Organizer",
   details:
-    "CRUD application which use Firebase to authenticate and store a database of documents for each users. Created to have a 'Mobile App' feeling by incorporating swipe gestures",
+    "CRUD application which use Firebase to authenticate and store a database of documents for each users. Created to have a 'Mobile App' feeling by incorporating swipe gestures to delete or highlight single entries",
   href: {
     githubLiveHref: "https://snt85c.github.io/TravelOrganizer/",
     showLive: true,
@@ -31,6 +33,37 @@ export const TravelOrganizerData: iData = {
     JEST: false,
     WEBPACK: true,
     dependencies:["framer-motion","react-swipeable","daisyui"]
+  },
+};
+
+export const WeatherAppData: iData = {
+  name: "Weather App",
+  details:
+    "Typescript web app that collecet data from user geolocation or user input and gives back 7 hours or 7 days forecast. Fully responsive for mobile, with easy to handle swipe action to toggle between datasets",
+  href: {
+    githubLiveHref: "https://snt85c.github.io/Weather-App-React-TS/",
+    showLive: true,
+    githubCodeHref: "https://github.com/snt85c/Weather-App-React-TS",
+    showCode: true,
+  },
+  img:{
+    desktop:weatherAppDesktop,
+    mobile:weatherAppMobile
+  },
+  devicons: {
+    HTML: true,
+    CSS: true,
+    TLWNDCSS: true,
+    TS: true,
+    JS: true,
+    REACT: true,
+    FRBS: false,
+    ND: false,
+    NPM: false,
+    GIT: true,
+    JEST: false,
+    WEBPACK: false,
+    dependencies:["openWeaterMap","react-swipeable","daisyui"]
   },
 };
 
