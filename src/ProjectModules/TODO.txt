@@ -1,13 +1,11 @@
-add tsParticles, useRef instead of useState, cleanup on useEffect,ui changes
+ui changes, changes interface iData details type from string to JSX.Element, fix lag in animation
 
-tsParticles has been added as background effect on PresentationPage.tsx. the speed of the particles has been decreased to give a better effect, but it was noticed that it could cause lag issues.
+linear gradient in projectModule moved to 180deg, in order to give a more homogeneous style to the background. the color now is diffused from the bottom (180deg), instead of coming from the side  
 
-useEffect now hve cleanup by using abortController.abort() on return
+add data for Taskmanager
 
-useRef has been added instead of useState to control isAlreadyVisited, as we dont want to trigger a re-render since it create issus with the motion.div ()
+iData details has been changed from type string to type JSX.Element, this way im able to style the data how i want (eg: some words can be highlighted now)
 
-ScrollIcon are now static, as removing them can cause re-render
+lag in animation was detected and pinpointed to the TsParticles component. the numbers of prticle have ben halved from 80 to 40, as well as the fpsLimit brougt from 120 to 30. to keep some style on screen, particles.links.distance is now 200
 
-add data for WeatherApp
-
-props.data.name is now inserted in the same div with props.data.details and GithubLinks
+animatePresence has been removed, as there is no need for it.

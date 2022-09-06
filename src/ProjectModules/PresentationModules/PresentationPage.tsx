@@ -1,10 +1,10 @@
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef} from "react";
 
 import SocialButtons from "./SocialButtons";
 import ScrollDown from "../ScrollDown";
-import { ParticlesTest } from "../Particles";
+import { ParticlesTest } from "./Particles";
 
 export default function PresentationModule() {
   const control = useAnimation();
@@ -33,7 +33,7 @@ export default function PresentationModule() {
 
   return (
     <>
-      <AnimatePresence>
+      {/* <AnimatePresence> */}
         <motion.div
           initial={{ x: "-100%", opacity: 0 }}
           //initially is hidden
@@ -50,9 +50,7 @@ export default function PresentationModule() {
           //
         >
           <div className="flex flex-row">
-            <span className="absolute -z-10">
-              <ParticlesTest />
-            </span>
+            <ParticlesTest />
             <div className="flex flex-col mt-5 ml-5 w-full">
               <div className="text-[8vw] sm:text-[3rem] -mb-[1.5vh] leading-none">
                 Hi, i'm
@@ -95,7 +93,7 @@ export default function PresentationModule() {
             <ScrollDown />
           </div>
         </motion.div>
-      </AnimatePresence>
+      {/* </AnimatePresence> */}
     </>
   );
 }

@@ -5,6 +5,7 @@ import { iData } from "../ProjectModuleDataComponents/ProjectModuleDataPackage";
 import Devicons from "./Devicons";
 import GitHubLinks from "./GitHubButtonsComponents/GitHubLinks";
 import ScrollDown from "./ScrollDown";
+import { generateRandomColor } from "../Services";
 
 export default function ProjectModule(props: { data?: iData }) {
   const control = useAnimation();
@@ -14,12 +15,11 @@ export default function ProjectModule(props: { data?: iData }) {
   const isAlreadyVisited = useRef(false);
 
   const testVariant = {
-    visible: { x: "0", opacity: 1, backgroundColor: "white" },
+    visible: { x: "0", opacity: 1 },
   };
 
   useEffect(() => {
     //if intersection-observer determines that inView is true or isAlreadyAnimated state is true, then set it to variant/visible, then set isAlreadyAnimated to true after 500ms. This allows for the animation to happen only once during the first render.
-    console.log(isAlreadyVisited.current)
     let abortController = new AbortController();
     if (inView || isAlreadyVisited.current) {
       control.start("visible");
@@ -32,15 +32,19 @@ export default function ProjectModule(props: { data?: iData }) {
   }, [control, inView]);
 
   return (
-    <AnimatePresence>
+    <>
+    {/* // <AnimatePresence> */}
       {props.data && (
         <motion.div
           ref={ref} //this is for intersection-observer
-          initial={{ x: -100, opacity: 0, backgroundColor: "black" }}
+          initial={{ x: -100, opacity: 0 }}
           variants={testVariant}
           animate={control}
           transition={{ type: "spring", stiffness: 60, duration: 500 }}
           className="flex flex-col justify-between items-center rounded-2xl text-black min-h-screen p-5 my-5 select-none"
+          style={{
+            background: `linear-gradient(180deg, white 30% ,${generateRandomColor()})`,
+          }}
         >
           <div className="flex flex-col sm:mx-5 sm:p-10 gap-20 sm:bg-gray-500/50 rounded-md">
             <div className="flex sm:flex-row  flex-col justify-center items-center  ">
@@ -71,10 +75,11 @@ export default function ProjectModule(props: { data?: iData }) {
           </div>
           <div className="flex flex-col gap-2 pb-5 sm:pb-1">
             <Devicons icons={props.data?.devicons} />
-             <ScrollDown />
+            <ScrollDown />
           </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    {/* // </AnimatePresence> */}
+    </>
   );
 }

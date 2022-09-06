@@ -1,6 +1,6 @@
 
 import './App.css';
-import { TravelOrganizerData, TicketmasterApi, ContactPageData, WeatherAppData } from './ProjectModuleDataComponents/ProjectModuleDataPackage';
+import { TravelOrganizerData, TicketmasterApi, ContactPageData, WeatherAppData, TaskManagerData } from './ProjectModuleDataComponents/ProjectModuleDataPackage';
 import ContactPage from './ProjectModules/ContactPage';
 import PresentationModule from './ProjectModules/PresentationModules/PresentationPage';
 import ProjectModule from './ProjectModules/ProjectModule';
@@ -22,9 +22,9 @@ function App() {
         <ProjectModule data={WeatherAppData}/>
       </div>
       <div className="snap-center">
-        <ProjectModule />
+        <ProjectModule data={TaskManagerData}/>
       </div>
-      <div className="snap-center">
+      <div className="snap-end">
         <ContactPage data={ContactPageData} />
       </div>
     </div>
