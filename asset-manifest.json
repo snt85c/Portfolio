@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5ab0b4e0.css",
-    "main.js": "/Portfolio/static/js/main.4a0f232c.js",
+    "main.css": "/Portfolio/static/css/main.c2ea0223.css",
+    "main.js": "/Portfolio/static/js/main.0b25572e.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/weatherAppDesktop.png": "/Portfolio/static/media/weatherAppDesktop.791aa6e0b6a97d425526.png",
     "static/media/ticketmasterApiDesktop.png": "/Portfolio/static/media/ticketmasterApiDesktop.61dbd02ef007908b1817.png",
@@ -12,14 +12,13 @@
     "static/media/TravelOrgMobile.png": "/Portfolio/static/media/TravelOrgMobile.96397f996198e947ac42.png",
     "static/media/TaskMngrDesktop.png": "/Portfolio/static/media/TaskMngrDesktop.e5d6513b73780cf9db4b.png",
     "static/media/TaskMngrMobile.png": "/Portfolio/static/media/TaskMngrMobile.6cbd43d21481c53d96c2.png",
-    "static/media/1.webp": "/Portfolio/static/media/1.2aaec88226187035e7c1.webp",
     "index.html": "/Portfolio/index.html",
-    "main.5ab0b4e0.css.map": "/Portfolio/static/css/main.5ab0b4e0.css.map",
-    "main.4a0f232c.js.map": "/Portfolio/static/js/main.4a0f232c.js.map",
+    "main.c2ea0223.css.map": "/Portfolio/static/css/main.c2ea0223.css.map",
+    "main.0b25572e.js.map": "/Portfolio/static/js/main.0b25572e.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ab0b4e0.css",
-    "static/js/main.4a0f232c.js"
+    "static/css/main.c2ea0223.css",
+    "static/js/main.0b25572e.js"
   ]
 }
