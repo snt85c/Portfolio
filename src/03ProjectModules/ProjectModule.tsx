@@ -65,7 +65,7 @@ export default function ProjectModule(props: { data?: iData }) {
                 </>
               )}
               <div className="flex flex-col items-center justify-center gap-5 -mt-[5rem] sm:mt-0 sm:-ml-[20rem] z-20 text-[3vw] sm:text-[1rem] w-[100%] sm:w-[50%] p-5 bg-slate-500/95 duration-300 text-white shadow-lg">
-                <div className="font-extrabold text text-[7vw] sm:text-[1.5rem] -mb-5">
+                <div className="font-extrabold text text-[6vw] sm:text-[1.5rem] -mb-5]">
                   {props.data?.name}
                 </div>
                 <span>{props.data?.details}</span>

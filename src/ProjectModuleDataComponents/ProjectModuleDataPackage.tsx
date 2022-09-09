@@ -128,7 +128,8 @@ export const TicketmasterApi: iData = {
   name: "Ticketmaster",
   details: (
     <span>
-      Clone with custom graphic using data collected from <span className="font-bold text-amber-500">Tiketmaster API</span>.
+      E-commerce frontend web application with a fully functioning shopping cart, product detail pages, and landing page. 
+      <span className="font-bold text-amber-500"> Tiketmaster API </span>
       Allows an user to search in a large online database of Artist and Concerts
       available live on the Ticketmaster platform
     </span>
@@ -176,7 +177,7 @@ export const ContactPageData: iData = {
     GIT: true,
     JEST: false,
     WEBPACK: false,
-    dependencies: ["framer-motion", "react-intersection-observer"],
+    dependencies: ["framer-motion", "react-intersection-observer", "vanta.js"],
   },
   img: {
     desktop: "",
