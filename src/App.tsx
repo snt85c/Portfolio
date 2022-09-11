@@ -9,13 +9,15 @@ import ProjectModule from "./03ProjectModules/ProjectModule";
 import AboutMe from "./02AboutMeComponents/AboutMe";
 
 function App() {
-  const ProjectModulesList: JSX.Element[] = projectModuleDataArray.map((projectData) => {
-    return (
-      <div className="snap-center ">
-        <ProjectModule data={projectData} />
-      </div>
-    );
-  });
+  const ProjectModulesList: JSX.Element[] = projectModuleDataArray.map(
+    (projectData, i) => {
+      return (
+        <div className="snap-center" key={i}>
+          <ProjectModule data={projectData} number={i}/>
+        </div>
+      );
+    }
+  );
 
   return (
     <>

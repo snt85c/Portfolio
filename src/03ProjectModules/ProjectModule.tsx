@@ -7,11 +7,9 @@ import GitHubLinks from "./GitHubButtonsComponents/GitHubLinks";
 import ScrollDown from "./ScrollDown";
 import { generateRandomColor } from "../Services";
 
-export default function ProjectModule(props: { data?: iData }) {
+export default function ProjectModule(props: { data: iData, number:number }) {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, delay: 0 }); //threshold:0.2,
-  // var isAlreadyVisited = false;
-  // const [isAlreadyVisited,setIsAlreadyVisited] = useState(false)
   const isAlreadyVisited = useRef(false);
 
   const testVariant = {
@@ -24,7 +22,6 @@ export default function ProjectModule(props: { data?: iData }) {
     if (inView || isAlreadyVisited.current) {
       control.start("visible");
       setTimeout(() => {
-        // setIsAlreadyVisited(true);
         isAlreadyVisited.current = true;
       }, 2000);
     }
@@ -33,7 +30,6 @@ export default function ProjectModule(props: { data?: iData }) {
 
   return (
     <>
-    {/* // <AnimatePresence> */}
       {props.data && (
         <motion.div
           ref={ref} //this is for intersection-observer
@@ -46,9 +42,9 @@ export default function ProjectModule(props: { data?: iData }) {
             background: `linear-gradient(180deg, white 30% ,${generateRandomColor()})`,
           }}
         >
-          <div className="flex flex-col sm:mx-5 sm:p-10 gap-20 sm:bg-gray-500/50 rounded-md">
+          <div className="flex flex-col sm:mx-5 relative sm:p-10 gap-20 sm:bg-gray-500/50 rounded-md">
             <div className="flex sm:flex-row  flex-col justify-center items-center  ">
-              {props.data?.img.desktop && (
+              {props.data.img.desktop && (
                 <>
                   <img
                     src={props.data.img.desktop}
@@ -74,12 +70,11 @@ export default function ProjectModule(props: { data?: iData }) {
             </div>
           </div>
           <div className="flex flex-col gap-2 pb-5 sm:pb-1">
-            <Devicons icons={props.data?.devicons} />
+            <Devicons icons={props.data.devicons} />
             <ScrollDown />
           </div>
         </motion.div>
       )}
-    {/* // </AnimatePresence> */}
     </>
   );
 }

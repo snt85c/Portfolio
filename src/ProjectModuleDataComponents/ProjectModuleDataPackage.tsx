@@ -9,54 +9,11 @@ import taskMngerDesktop from "./TaskMngrDesktop.png";
 
 export const projectModuleDataArray: iData[] = [
   {
-    name: "Task Manager",
-    details: (
-      <span>
-        TODO application styled with a win98 CSS. Created from the base up in{" "}
-        <span className="text-amber-500 font-bold">
-          Test Driven Development (TDD)
-        </span>{" "}
-        to demonstrate full testing capabilities
-      </span>
-    ),
-    href: {
-      githubLiveHref: "https://unittestingapp-2e18e.web.app/",
-      showLive: true,
-      githubCodeHref: "https://github.com/snt85c/ReactTesting",
-      showCode: true,
-    },
-    img: {
-      desktop: taskMngerDesktop,
-      mobile: TaskMngrMobile,
-    },
-    devicons: {
-      HTML: true,
-      CSS: true,
-      TLWNDCSS: true,
-      TS: true,
-      JS: true,
-      REACT: true,
-      FRBS: true,
-      ND: false,
-      NPM: true,
-      GIT: true,
-      JEST: true,
-      WEBPACK: false,
-      dependencies: [
-        "framer-motion",
-        "react-testing-library",
-        "react-calendar",
-        "98.css",
-      ],
-    },
-  },
-  {
     name: "Travel Organizer",
     details: (
       <span>
-        export const projectArray:iData[] = CRUD application which use Firebase
-        to authenticate and store a database of documents for each users.
-        Created to have a{" "}
+        CRUD application which use Firebase to authenticate and store a database
+        of documents for each users. Created to have a{" "}
         <span className="font-bold text-amber-500">'Mobile App' feeling</span>{" "}
         by incorporating swipe gestures to delete or highlight single entries
       </span>
@@ -84,10 +41,12 @@ export const projectModuleDataArray: iData[] = [
       GIT: true,
       JEST: false,
       WEBPACK: true,
+      FRAMER: true,
+      CYPRESS: false,
+    RTL:false,
       dependencies: ["framer-motion", "react-swipeable", "daisyui"],
     },
   },
-
   {
     name: "Weather App",
     details: (
@@ -121,10 +80,12 @@ export const projectModuleDataArray: iData[] = [
       GIT: true,
       JEST: false,
       WEBPACK: false,
+      FRAMER: false,
+      CYPRESS: false,
+    RTL:false,
       dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
     },
   },
-
   {
     name: "Ticketmaster",
     details: (
@@ -159,7 +120,57 @@ export const projectModuleDataArray: iData[] = [
       GIT: true,
       JEST: false,
       WEBPACK: true,
+      FRAMER: false,
+      CYPRESS: false,
+    RTL:false,
       dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
+    },
+  },
+  {
+    name: "Task Manager",
+    details: (
+      <span>
+        TODO application styled with a win98 CSS. Created from the base up in{" "}
+        <span className="text-amber-500 font-bold">
+          Test Driven Development (TDD)
+        </span>{" "}
+        to demonstrate full testing capabilities with{" "}
+        <span className="text-amber-500 font-bold">React Testing Library</span>{" "}
+        and <span className="text-amber-500 font-bold">Cypress</span>
+      </span>
+    ),
+    href: {
+      githubLiveHref: "https://unittestingapp-2e18e.web.app/",
+      showLive: true,
+      githubCodeHref: "https://github.com/snt85c/ReactTesting",
+      showCode: true,
+    },
+    img: {
+      desktop: taskMngerDesktop,
+      mobile: TaskMngrMobile,
+    },
+    devicons: {
+      HTML: true,
+      CSS: true,
+      TLWNDCSS: true,
+      TS: true,
+      JS: true,
+      REACT: true,
+      FRBS: true,
+      ND: false,
+      NPM: true,
+      GIT: true,
+      JEST: true,
+      WEBPACK: false,
+      FRAMER: true,
+      CYPRESS: true,
+      RTL: true,
+      dependencies: [
+        "framer-motion",
+        "react-testing-library",
+        "cypress",
+        "98.css",
+      ],
     },
   },
 ];
@@ -180,6 +191,9 @@ export const ContactPageData: iData = {
     GIT: true,
     JEST: false,
     WEBPACK: false,
+    FRAMER: true,
+    CYPRESS: false,
+    RTL: false,
     dependencies: ["framer-motion", "react-intersection-observer", "vanta.js"],
   },
   img: {
@@ -226,5 +240,8 @@ export interface iDevicons {
   GIT: boolean;
   JEST: boolean;
   WEBPACK: boolean;
+  FRAMER: boolean;
+  CYPRESS: boolean;
+  RTL: boolean;
   dependencies: string[];
 }

@@ -51,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.0.0",
     "autoprefixer": "^10.4.8",
     "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
