@@ -18,10 +18,8 @@ export const Particles = () => {
             gyroControls: true,
             color: 0xf5e716,
             backgroundColor: 0x0,
-            // minHeight: 200.0,
-            // minWidth: 200.0,
             scale: 1.0,
-            scaleMobile: 1.0,
+            scaleMobile: 1.0
           })
           );
       

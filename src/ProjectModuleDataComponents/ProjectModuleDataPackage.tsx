@@ -124,6 +124,7 @@ export const WeatherAppData: iData = {
   },
 };
 
+
 export const TicketmasterApi: iData = {
   name: "Ticketmaster",
   details: (
@@ -190,6 +191,9 @@ export const ContactPageData: iData = {
     showCode: true,
   },
 };
+
+export const projectArray:iData[] = [TravelOrganizerData, TicketmasterApi, WeatherAppData, TaskManagerData ]
+
 
 export interface iData {
   name: string;
