@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Portfolio
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
+the basic layout is a React SPA with Typsecript that uses framer-motion, intersection-observer and scroll-snap CSS rules to give the feeling of multiple pages being loaded on scroll. Styled with TailwindCSS and VantaJs(the opening background animation showed on page 0).
 
-In the project directory, you can run:
+Framer-motion is used to create a sliding animation that is started when intersection-observer determines that the component is in the viewport. setTimeout with a 2000msec time is used to set a boolean  useRef value and conditionally execute the animation to avoid the sliding to happen a second time when the user visit the component again. scroll-snap-y is the way the scrolling is handled, this way the user scrolling is forced to stop at every "page"  
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The project makes use of 4 different components which are rendered from App.jsx:
+ - PresentationPage - behaves as the front cover of the project, like a presentation card
+ - About me - as for the title, render information on me
+ - ProjectModule - reusable, gets a props object with all the information on the projects and its rendered on screen
+ - ContactPage - render the contact information, as well as the information about the Portfolio, github page and devicons
+ 
+ ### ProjectModule
+ make use of the service component "ProjectModuleDataPackage" where all the typescript interfaces are saved as well as the data for each project page and an array that contains them. This contains the name of the project, the description text with the JSX.Element type (so that it can be customised) the href for the githib button, the src for the images, and the information to show the devicons and dependencies (boolean and string). 
+ The ProjectModules are rendered on screen by applying a .map() to the projectArray: iData[] that consumes the data for each project and returns a JSX.Element[].
+ 
+ ## How to run the code
+ 
+ ```bash
+gh repo clone snt85c/Portfolio
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+install project repositories 
 
-### `npm test`
+ ```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+run
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+open http://localhost/3000 with your browser to see the site
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT](https://choosealicense.com/licenses/mit/)

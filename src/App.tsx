@@ -1,7 +1,7 @@
 import "./App.css";
 import {
   ContactPageData,
-  projectArray,
+  projectModuleDataArray,
 } from "./ProjectModuleDataComponents/ProjectModuleDataPackage";
 import ContactPage from "./03ProjectModules/ContactPage";
 import PresentationModule from "./01PresentationComponents/PresentationPage";
@@ -9,8 +9,7 @@ import ProjectModule from "./03ProjectModules/ProjectModule";
 import AboutMe from "./02AboutMeComponents/AboutMe";
 
 function App() {
-  
-  const ProjectModulesList = projectArray.map((projectData) => {
+  const ProjectModulesList: JSX.Element[] = projectModuleDataArray.map((projectData) => {
     return (
       <div className="snap-center ">
         <ProjectModule data={projectData} />
