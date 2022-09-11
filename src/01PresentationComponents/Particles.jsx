@@ -1,15 +1,13 @@
 import { useEffect, useState, useRef } from "react";
-import DOTS from "vanta/dist/vanta.dots.min";
 import RINGS from "vanta/dist/vanta.rings.min";
-import NET from "vanta/dist/vanta.net.min";
 
-
-export const Particles = () => {
+export const Particles = (page) => {
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
+
+  console.log(page)
   useEffect(() => {
     if (!vantaEffect) {
-
         setVantaEffect(
           RINGS({
             el: myRef.current,
@@ -19,11 +17,10 @@ export const Particles = () => {
             color: 0xf5e716,
             backgroundColor: 0x0,
             scale: 1.0,
-            scaleMobile: 1.0
+            scaleMobile: 1.0,
           })
-          );
-      
-    }
+        );
+      }
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };

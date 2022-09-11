@@ -1,13 +1,13 @@
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { iData } from "../ProjectModuleDataComponents/ProjectModuleDataPackage";
 import Devicons from "./Devicons";
 import GitHubLinks from "./GitHubButtonsComponents/GitHubLinks";
 import ScrollDown from "./ScrollDown";
 import { generateRandomColor } from "../Services";
 
-export default function ProjectModule(props: { data: iData, number:number }) {
+export default function ProjectModule(props: { data: iData; number: number }) {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, delay: 0 }); //threshold:0.2,
   const isAlreadyVisited = useRef(false);

@@ -57,7 +57,7 @@ export default function PresentationModule() {
            min-h-[100vh] pt-5 pb-2  text-white text-[2rem] select-none"
         //
       >
-        <Particles />
+        <Particles/>
         <div className="flex flex-row ">
           <div className="flex flex-col mt-5 ml-5 w-full ">
             <div className="text-[8vw] sm:text-[3rem] -mb-[1.5vh] leading-none ">

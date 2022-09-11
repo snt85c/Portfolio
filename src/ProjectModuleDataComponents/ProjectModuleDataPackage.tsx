@@ -14,7 +14,7 @@ export const projectModuleDataArray: iData[] = [
       <span>
         CRUD application which use Firebase to authenticate and store a database
         of documents for each users. Created to have a{" "}
-        <span className="font-bold text-amber-500">'Mobile App' feeling</span>{" "}
+        <span className="font-bold text-amber-400">'Mobile App' feeling</span>{" "}
         by incorporating swipe gestures to delete or highlight single entries
       </span>
     ),
@@ -53,7 +53,7 @@ export const projectModuleDataArray: iData[] = [
       <span>
         Typescript web app that collect data from user geolocation or user input
         and gives back 7 hours or 7 days forecast. Fully{" "}
-        <span className="font-bold text-amber-500">responsive for mobile</span>,
+        <span className="font-bold text-amber-400">responsive for mobile</span>,
         with easy to handle swipe action to toggle between datasets
       </span>
     ),
@@ -92,7 +92,7 @@ export const projectModuleDataArray: iData[] = [
       <span>
         E-commerce frontend web application with a fully functioning shopping
         cart, product detail pages, and landing page.
-        <span className="font-bold text-amber-500"> Tiketmaster API </span>
+        <span className="font-bold text-amber-400"> Tiketmaster API </span>
         Allows an user to search in a large online database of Artist and
         Concerts available live on the Ticketmaster platform
       </span>
@@ -131,12 +131,12 @@ export const projectModuleDataArray: iData[] = [
     details: (
       <span>
         TODO application styled with a win98 CSS. Created from the base up in{" "}
-        <span className="text-amber-500 font-bold">
+        <span className="text-amber-400 font-bold">
           Test Driven Development (TDD)
         </span>{" "}
         to demonstrate full testing capabilities with{" "}
-        <span className="text-amber-500 font-bold">React Testing Library</span>{" "}
-        and <span className="text-amber-500 font-bold">Cypress</span>
+        <span className="text-amber-400 font-bold">React Testing Library</span>{" "}
+        and <span className="text-amber-400 font-bold">Cypress</span>
       </span>
     ),
     href: {
@@ -162,7 +162,7 @@ export const projectModuleDataArray: iData[] = [
       GIT: true,
       JEST: true,
       WEBPACK: false,
-      FRAMER: true,
+      FRAMER: false,
       CYPRESS: true,
       RTL: true,
       dependencies: [
