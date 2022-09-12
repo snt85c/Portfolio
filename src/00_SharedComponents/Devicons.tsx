@@ -1,4 +1,4 @@
-import { iDevicons } from "../ProjectModuleDataComponents/ProjectModuleDataPackage";
+import { iDevicons } from "../03_ProjectModules/03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
 import { Icon } from '@iconify/react';
 
 export default function Devicons(props: { icons: iDevicons }) {

@@ -43,7 +43,7 @@ export const projectModuleDataArray: iData[] = [
       WEBPACK: true,
       FRAMER: true,
       CYPRESS: false,
-    RTL:false,
+      RTL: false,
       dependencies: ["framer-motion", "react-swipeable", "daisyui"],
     },
   },
@@ -82,7 +82,7 @@ export const projectModuleDataArray: iData[] = [
       WEBPACK: false,
       FRAMER: false,
       CYPRESS: false,
-    RTL:false,
+      RTL: false,
       dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
     },
   },
@@ -122,7 +122,7 @@ export const projectModuleDataArray: iData[] = [
       WEBPACK: true,
       FRAMER: false,
       CYPRESS: false,
-    RTL:false,
+      RTL: false,
       dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
     },
   },
@@ -165,12 +165,7 @@ export const projectModuleDataArray: iData[] = [
       FRAMER: false,
       CYPRESS: true,
       RTL: true,
-      dependencies: [
-        "framer-motion",
-        "react-testing-library",
-        "cypress",
-        "98.css",
-      ],
+      dependencies: ["react-testing-library", "cypress", "98.css"],
     },
   },
 ];
@@ -194,7 +189,7 @@ export const ContactPageData: iData = {
     FRAMER: true,
     CYPRESS: false,
     RTL: false,
-    dependencies: ["framer-motion", "react-intersection-observer", "vanta.js"],
+    dependencies: ["react-intersection-observer", "vanta.js"],
   },
   img: {
     desktop: "",
@@ -211,9 +206,34 @@ export const ContactPageData: iData = {
 export interface iData {
   name: string;
   details: JSX.Element;
-  devicons: iDevicons;
-  href: iHref;
-  img: iImage;
+  devicons: {
+    HTML: boolean;
+    CSS: boolean;
+    TLWNDCSS: true;
+    TS: boolean;
+    JS: boolean;
+    REACT: boolean;
+    FRBS: boolean;
+    ND: boolean;
+    NPM: boolean;
+    GIT: boolean;
+    JEST: boolean;
+    WEBPACK: boolean;
+    FRAMER: boolean;
+    CYPRESS: boolean;
+    RTL: boolean;
+    dependencies: string[];
+  };
+  href: {
+    githubLiveHref: string;
+    showLive: boolean;
+    githubCodeHref: string;
+    showCode: boolean;
+  };
+  img: {
+    desktop: string;
+    mobile: string;
+  };
 }
 
 export interface iImage {

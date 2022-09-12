@@ -1,5 +1,0 @@
-change ContactPage
-
-vantaJs fx as background as been added instead of multicolor background, this is to keep a consistent feeling with the initial background. All the components inside have beem placed inside a semi transparent card, to simulate a call for action and a presentation card to leave behind
-
-the shape of this container has been changed, this way the social links  icons are not completely taking all the space on the left, but only condividing part of the call to action. the rest of the container (1/2 bottom) is used for the see the code button and devicons for the page

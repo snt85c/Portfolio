@@ -1,16 +1,13 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
-import ScrollDown from "../03ProjectModules/ScrollDown";
+import ScrollDown from "../00_SharedComponents/ScrollDown";
 import SocialButtons from "./SocialButtons";
-import { Particles } from "./Particles";
-// import { ParticlesTest } from "./Particles";
+import { VantaJsRingsBackgroundEffect } from "../00_SharedComponents/VantaJs";
 
 export default function PresentationModule() {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, delay: 0 });
-  // const [isAlreadyVisited, setIsAlreadyVisited] = useState(false);
-  // let isAlreadyVisited = false;
   const isAlreadyVisited = useRef(false);
 
   const firstModuleVariant = {
@@ -57,7 +54,7 @@ export default function PresentationModule() {
            min-h-[100vh] pt-5 pb-2  text-white text-[2rem] select-none"
         //
       >
-        <Particles/>
+        <VantaJsRingsBackgroundEffect/>
         <div className="flex flex-row ">
           <div className="flex flex-col mt-5 ml-5 w-full ">
             <div className="text-[8vw] sm:text-[3rem] -mb-[1.5vh] leading-none ">

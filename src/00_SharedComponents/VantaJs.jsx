@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import RINGS from "vanta/dist/vanta.rings.min";
 
-export const Particles = (page) => {
+export const VantaJsRingsBackgroundEffect = (page) => {
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
 
@@ -11,7 +11,7 @@ export const Particles = (page) => {
         setVantaEffect(
           RINGS({
             el: myRef.current,
-            mouseControls: false,
+            mouseControls: true,
             touchControls: false,
             gyroControls: true,
             color: 0xf5e716,

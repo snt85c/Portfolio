@@ -1,0 +1,3 @@
+Refactor folders
+
+all shared items are moved to ./00_SharedComponents. ContactPage.tsx gets his own folder (04_ContactComponents). 03_ProjectModules folder has shared components removed and moved to SharedComponent folder. ProjectModulesDataComponent folder is moved inside 03_ProjectModule Folder and renamed 03.1_ProjectModulesDataComponents

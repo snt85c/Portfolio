@@ -1,11 +1,11 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
-import { iData } from "../ProjectModuleDataComponents/ProjectModuleDataPackage";
-import Devicons from "./Devicons";
-import GitHubLinks from "./GitHubButtonsComponents/GitHubLinks";
-import ScrollDown from "./ScrollDown";
-import { generateRandomColor } from "../Services";
+import { iData } from "./03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
+import Devicons from "../00_SharedComponents/Devicons";
+import GitHubLinks from "../00_SharedComponents/GitHubButtonsComponents/GitHubLinks";
+import ScrollDown from "../00_SharedComponents/ScrollDown";
+import { generateRandomColor } from "../00_SharedComponents/Services";
 
 export default function ProjectModule(props: { data: iData; number: number }) {
   const control = useAnimation();

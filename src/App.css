@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "GTAlpina";
-  src: url("./ProjectModuleDataComponents/GTAlpinaFineRegularItalic.ttf");
+  src: url("./00_SharedComponents/GTAlpinaFineRegularItalic.ttf");
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");

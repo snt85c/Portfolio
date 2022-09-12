@@ -14,5 +14,5 @@ code {
 
 @font-face {
   font-family: 'GTAlpina';
-  src: url('./ProjectModuleDataComponents/GTAlpinaFineRegularItalic.ttf') format('ttf');
+  src: url('./00_SharedComponents/GTAlpinaFineRegularItalic.ttf') format('ttf');
 }

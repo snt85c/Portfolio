@@ -1,11 +1,11 @@
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
-import { iData } from "./ProjectModuleDataComponents/ProjectModuleDataPackage";
-import Devicons from "./03ProjectModules/Devicons";
-import GitHubLinks from "./03ProjectModules/GitHubButtonsComponents/GitHubLinks";
-import SocialButtons from "./01PresentationComponents/SocialButtons";
-import { Particles } from "./01PresentationComponents/Particles";
+import { iData } from "../03_ProjectModules/03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
+import Devicons from "../00_SharedComponents/Devicons";
+import GitHubLinks from "../00_SharedComponents/GitHubButtonsComponents/GitHubLinks";
+import SocialButtons from "../01_PresentationComponents/SocialButtons";
+import { VantaJsRingsBackgroundEffect } from "../00_SharedComponents/VantaJs";
 
 export default function ContactPage(props: { data: iData }) {
   const control = useAnimation();
@@ -34,24 +34,26 @@ export default function ContactPage(props: { data: iData }) {
         variants={testVariant}
         animate={control}
         transition={{ type: "spring", stiffness: 60, duration: 300 }}
-        className="flex flex-col justify-between items-center rounded-2xl text-white min-h-screen first:mt-0 p-5 text-[2rem] my-10 select-none"
+        className="flex flex-col justify-center items-center rounded-2xl text-white min-h-screen first:mt-0 p-5 text-[2rem] my-10 select-none"
       >
-        <Particles />
+        <VantaJsRingsBackgroundEffect />
 
-        <div className="flex  bg-slate-400/75 m-5 mt-20 md:w-1/2 p-5 ">
+        <div className="flex  bg-slate-400/75 m-5  md:w-1/2 p-5 ">
           <div className="flex flex-col">
-            <div className="flex flex-row font-bold">
+            <div className="flex flex-row ">
               <div>
-                <span className="text-black font-semibold">Say Hi!</span>
-                <div className="text-[1rem] md:mt-5 p-2 font-semibold ">
+                <span className="text-black text-[3.5rem] font-semibold">Say Hi!</span>
+                <div className=" text-[1rem] md:text-[1.2rem] md:mt-5 p-2 font-semibold ">
                   Currently open for new opportunities or people to share ideas
                   with! For any other information about me or my work, feel free
                   to reach out!
                 </div>
-                <div className="text-[1rem] font-normal mt-5">
+                <div className="text-[1rem] font-normal p-2 mt-5">
                   <span>contact me at:</span>
                   <a href="mailto:santi.cacciola@hotmail.it">
-                    <div className="underline  font-extrabold">santi.cacciola@hotmail.it</div>
+                    <div className="underline  font-extrabold text-black">
+                      santi.cacciola@hotmail.it
+                    </div>
                   </a>
                 </div>
               </div>

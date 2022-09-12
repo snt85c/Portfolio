@@ -2,11 +2,11 @@ import "./App.css";
 import {
   ContactPageData,
   projectModuleDataArray,
-} from "./ProjectModuleDataComponents/ProjectModuleDataPackage";
-import ContactPage from "./ContactPage";
-import PresentationModule from "./01PresentationComponents/PresentationPage";
-import ProjectModule from "./03ProjectModules/ProjectModule";
-import AboutMe from "./02AboutMeComponents/AboutMe";
+} from "./03_ProjectModules/03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
+import ContactPage from "./04_ContactComponents/ContactPage";
+import PresentationModule from "./01_PresentationComponents/PresentationPage";
+import ProjectModule from "./03_ProjectModules/ProjectModule";
+import AboutMe from "./02_AboutMeComponents/AboutMe";
 
 function App() {
   const ProjectModulesList: JSX.Element[] = projectModuleDataArray.map(

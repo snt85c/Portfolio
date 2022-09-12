@@ -1,4 +1,4 @@
-import { iHref } from "../../ProjectModuleDataComponents/ProjectModuleDataPackage";
+import { iHref } from "../../03_ProjectModules/03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
 import LinkToGithubLiveButton from "./LinkToGithubLiveButton";
 import LinkToGithubCodeButton from "./LinkToGuthubCodeButton";
 
