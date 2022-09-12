@@ -28,7 +28,7 @@ export const VantaJsRingsBackgroundEffect = (page) => {
 
   return (
     <>
-      <div ref={myRef} className=" absolute -z-10 min-w-full min-h-[97%]"></div>
+      <div ref={myRef} className=" absolute top-0 -z-10 min-w-full min-h-full"></div>
     </>
   );
 };

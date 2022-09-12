@@ -18,7 +18,7 @@ export default function ContactPage(props: { data: iData }) {
 
   useEffect(() => {
     //if intersection-observer determines that inView is true or isAlreadyAnimated state is true, then set it to variant/visible, then set isAlreadyAnimated to true after 2000ms. This allows for the animation to happen only once during the first render.
-    if (inView || isAlreadyVisited) {
+    if (inView || isAlreadyVisited.current) {
       control.start("visible");
       setTimeout(() => {
         isAlreadyVisited.current = true;
@@ -38,12 +38,12 @@ export default function ContactPage(props: { data: iData }) {
       >
         <VantaJsRingsBackgroundEffect />
 
-        <div className="flex  bg-slate-400/75 m-5  md:w-1/2 p-5 ">
+        <div className="flex  bg-slate-400/[0.90] m-5  md:w-1/2 p-5 ">
           <div className="flex flex-col">
             <div className="flex flex-row ">
               <div>
                 <span className="text-black text-[3.5rem] font-semibold">Say Hi!</span>
-                <div className=" text-[1rem] md:text-[1.2rem] md:mt-5 p-2 font-semibold ">
+                <div className=" text-[1rem] md:text-[1.2rem] md:mt-5 p-2 ">
                   Currently open for new opportunities or people to share ideas
                   with! For any other information about me or my work, feel free
                   to reach out!

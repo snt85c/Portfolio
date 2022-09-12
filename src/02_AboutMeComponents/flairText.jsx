@@ -2,7 +2,7 @@ import ScrollDown from "../00_SharedComponents/ScrollDown"
 export default function FlairText(){
 
     return(<>
-    <div className=" sm:absolute flex  flex-col items-center justify-center bottom-0 leading-none text-[3vw] sm:text-[1rem] text-center p-3    text-white h-1/3 w-full">
+    <div className=" flex  flex-col items-center justify-center bottom-0 leading-none text-[3vw] sm:text-[1rem] text-center p-3    text-white h-1/3 w-full">
           <div className="flex justify-center items-center m-3 text-[4vw] sm:text-[2rem]">
             I like making{" "}
             <span className="text-amber-500 font-bold text-[5vw] sm:text-[3rem] ml-1 font-[GTAlpina]">
