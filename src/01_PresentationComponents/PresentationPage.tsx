@@ -8,7 +8,8 @@ import { VantaJsRingsBackgroundEffect } from "../00_SharedComponents/VantaJs";
 export default function PresentationModule() {
   const control = useAnimation();
   const [ref, inView] = useInView({ threshold: 0, delay: 0 });
-  const isAlreadyVisited = useRef(false);
+  // const isAlreadyVisited = useRef(false);
+  let isAlreadyVisited = false
 
   const firstModuleVariant = {
     visible: { x: "0", opacity: 1 },
@@ -18,14 +19,14 @@ export default function PresentationModule() {
     let abortController = new AbortController();
 
     //if intersection-observer determines that inView is true or isAlreadyVisited state is true, then set it to variant/visible, then set isAlreadyVisited to true after 2000ms. This allows for the animation to happen only once during the first render.
-    if (inView || isAlreadyVisited.current) {
+    if (inView || isAlreadyVisited) {
       control.start("visible");
       setTimeout(() => {
-        isAlreadyVisited.current = true;
+        isAlreadyVisited = true;
       }, 2000);
     }
     return abortController.abort();
-  }, [control, inView]);
+  }, [inView]);
 
   useEffect(() => {
     function telegramAlert() {
@@ -49,8 +50,8 @@ export default function PresentationModule() {
         //control is dependent on the variant
         transition={{ type: "tween", duration: 0.8 }}
         //tween is a simple slide animation, no bounce
-        className="flex flex-col  justify-between border border-gray-500 mx-5
-           min-h-[100vh] pt-5 pb-2  text-white text-[2rem] select-none"
+        className="flex flex-col  justify-between border border-gray-500 
+           min-h-[100vh] pt-5 pb-2 text-white text-[2rem] select-none"
         //
       >
         <VantaJsRingsBackgroundEffect/>

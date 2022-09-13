@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 import "../App.css";
 import FlairText from "./flairText";
 import bg from "./bg.png";
-import AboutMeCard from "./AbourMeCard";
+import AboutMeCard from "./AboutMeCard";
+import ScrollDown from "../00_SharedComponents/ScrollDown";
 
 export default function AboutMe() {
   const control = useAnimation();
@@ -40,16 +41,16 @@ export default function AboutMe() {
         //control is dependent on the variant
         transition={{ type: "tween", duration: 0.8 }}
         //tween is a simple slide animation, no bounce
-        className="flex flex-col justify-between items-center min-h-screen pt-10 pb-2 bg-black text-white text-[2rem] select-none my-10  "
+        className="flex flex-col justify-center items-center min-h-screen pt-5 pb-2 bg-black text-white text-[2rem] select-none  "
         //
         style={{
           backgroundImage: `url(${bg})`,
-          objectFit: "contain",
+          objectFit: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
         <AboutMeCard />
-        <FlairText />
+        <ScrollDown />
       </motion.div>
     </>
   );

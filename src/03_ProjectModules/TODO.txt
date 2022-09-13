@@ -1,8 +1,0 @@
-fix AboutMe.jsx
-
-this page now has some content. the background is an image of my desktop, previously was set as an asbolutely positioened overlay with a backgroundColor of rgba(0,0,0,0.8) on top of it to set some opacity on top of the picture, but it revealed that it was causing some rerendering of the AboutMe page after set (a little flickering that wasnt caused by other components) so it was removed in favour of something simplier such as actually decreasing the luminosity of the background picture via GIMP. (a copy of the picture has been kept in his original colors)
-
-the page now has a resumeButton that is not connected to anything but in the future will open a pfd in another page, and eventually could be saved. the button has a telegram alert on it
-
-
-

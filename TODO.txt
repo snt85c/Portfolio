@@ -1,0 +1,9 @@
+fix margins between components, add threshold of .5 in useInView for ProjectModule, change manifest.json
+
+it was noted that the margins between page components can create issues so they were standardized since they were off from first implementation. all the margins in every component have been removed and now App.tsx container for all the components is set to be flex column with a gap of 5.
+
+there is now a threshold of .05 in the useInView for ProjectModule, this way the animation wont be triggered when on mobile, since it appears that the snap align is not perfeclty centered depending on the type of browser used
+
+manfest.json has been changed. icons have been removed, bgcolor is now black, text hopefully white
+
+AboutMe has been changed to have all the components inside the AbouMeCard

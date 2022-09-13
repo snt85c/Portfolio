@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
 import { iData } from "../03_ProjectModules/03.1_ProjectModuleDataComponents/ProjectModuleDataPackage";
@@ -18,7 +18,7 @@ export default function ContactPage(props: { data: iData }) {
 
   useEffect(() => {
     //if intersection-observer determines that inView is true or isAlreadyAnimated state is true, then set it to variant/visible, then set isAlreadyAnimated to true after 2000ms. This allows for the animation to happen only once during the first render.
-    if (inView || isAlreadyVisited.current) {
+    if (inView || isAlreadyVisited) {
       control.start("visible");
       setTimeout(() => {
         isAlreadyVisited.current = true;
@@ -27,14 +27,13 @@ export default function ContactPage(props: { data: iData }) {
   }, [control, inView]);
 
   return (
-    <AnimatePresence>
       <motion.div
         ref={ref}
         initial={{ x: -100, opacity: 0 }}
         variants={testVariant}
         animate={control}
         transition={{ type: "spring", stiffness: 60, duration: 300 }}
-        className="flex flex-col justify-center items-center rounded-2xl text-white min-h-screen first:mt-0 p-5 text-[2rem] my-10 select-none"
+        className="flex flex-col justify-center items-center rounded-2xl text-white min-h-screen first:mt-0 p-5 text-[2rem] select-none"
       >
         <VantaJsRingsBackgroundEffect />
 
@@ -48,7 +47,7 @@ export default function ContactPage(props: { data: iData }) {
                   with! For any other information about me or my work, feel free
                   to reach out!
                 </div>
-                <div className="text-[1rem] font-normal p-2 mt-5">
+                <div className="flex flex-col justify-center items-center text-[1rem] font-normal p-2 mt-5">
                   <span>contact me at:</span>
                   <a href="mailto:santi.cacciola@hotmail.it">
                     <div className="underline  font-extrabold text-black">
@@ -69,6 +68,5 @@ export default function ContactPage(props: { data: iData }) {
           </div>
         </div>
       </motion.div>
-    </AnimatePresence>
   );
 }

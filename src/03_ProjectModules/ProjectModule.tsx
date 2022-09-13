@@ -9,7 +9,7 @@ import { generateRandomColor } from "../00_SharedComponents/Services";
 
 export default function ProjectModule(props: { data: iData; number: number }) {
   const control = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0, delay: 0 }); //threshold:0.2,
+  const [ref, inView] = useInView({ threshold: 0.5, delay: 0 }); //threshold:0.2,
   const isAlreadyVisited = useRef(false);
 
   const testVariant = {
@@ -37,7 +37,7 @@ export default function ProjectModule(props: { data: iData; number: number }) {
           variants={testVariant}
           animate={control}
           transition={{ type: "spring", stiffness: 60, duration: 500 }}
-          className="flex flex-col justify-between items-center rounded-2xl text-black min-h-screen p-5 my-5 select-none"
+          className="flex flex-col justify-between items-center rounded-2xl text-black min-h-screen px-5 select-none"
           style={{
             background: `linear-gradient(180deg, white 30% ,${generateRandomColor()})`,
           }}
@@ -69,6 +69,7 @@ export default function ProjectModule(props: { data: iData; number: number }) {
               </div>
             </div>
           </div>
+
           <div className="flex flex-col gap-2 pb-5 sm:pb-1">
             <Devicons icons={props.data.devicons} />
             <ScrollDown />

@@ -13,7 +13,7 @@ function App() {
     (projectData, i) => {
       return (
         <div className="snap-center" key={i}>
-          <ProjectModule data={projectData} number={i}/>
+          <ProjectModule data={projectData} number={i} />
         </div>
       );
     }
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <div className="snap-y snap-proximity">
+      <div className="flex flex-col snap-y snap-mandatory gap-5">
         <div className="snap-center">
           <PresentationModule />
         </div>
@@ -29,7 +29,7 @@ function App() {
           <AboutMe />
         </div>
         <>{ProjectModulesList}</>
-        <div className="snap-end">
+        <div className="snap-center">
           <ContactPage data={ContactPageData} />
         </div>
       </div>

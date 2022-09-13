@@ -5,7 +5,6 @@ export const VantaJsRingsBackgroundEffect = (page) => {
   const [vantaEffect, setVantaEffect] = useState(0);
   const myRef = useRef(null);
 
-  console.log(page)
   useEffect(() => {
     if (!vantaEffect) {
         setVantaEffect(

@@ -28,7 +28,6 @@ export default function FlairText(){
               is yet to come.
             </span>
           </div>
-          <ScrollDown />
         </div>
     </>)
 }
