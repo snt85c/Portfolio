@@ -1,4 +1,3 @@
-import ScrollDown from "../00_SharedComponents/ScrollDown"
 export default function FlairText(){
 
     return(<>

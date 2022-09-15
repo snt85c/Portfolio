@@ -11,12 +11,12 @@ export const projectModuleDataArray: iData[] = [
   {
     name: "Travel Organizer",
     details: (
-      <span>
+      <p>
         CRUD application which use Firebase to authenticate and store a database
         of documents for each users. Created to have a{" "}
         <span className="font-bold text-amber-400">'Mobile App' feeling</span>{" "}
         by incorporating swipe gestures to delete or highlight single entries
-      </span>
+      </p>
     ),
     href: {
       githubLiveHref: "https://snt85c.github.io/TravelOrganizer/",
@@ -29,33 +29,19 @@ export const projectModuleDataArray: iData[] = [
       mobile: TravelOrgMobile,
     },
     devicons: {
-      HTML: true,
-      CSS: true,
-      TLWNDCSS: true,
-      TS: true,
-      JS: true,
-      REACT: true,
-      FRBS: true,
-      ND: false,
-      NPM: true,
-      GIT: true,
-      JEST: false,
-      WEBPACK: true,
-      FRAMER: true,
-      CYPRESS: false,
-      RTL: false,
-      dependencies: ["framer-motion", "react-swipeable", "daisyui"],
+      icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","Firebase","NPM","GIT","Webpack","Framer-Motion"] ,
+      dependencies: ["react-swipeable", "daisyui"],
     },
   },
   {
     name: "Weather App",
     details: (
-      <span>
+      <p>
         Typescript web app that collect data from user geolocation or user input
         and gives back 7 hours or 7 days forecast. Fully{" "}
         <span className="font-bold text-amber-400">responsive for mobile</span>,
         with easy to handle swipe action to toggle between datasets
-      </span>
+      </p>
     ),
     href: {
       githubLiveHref: "https://snt85c.github.io/Weather-App-React-TS/",
@@ -68,34 +54,20 @@ export const projectModuleDataArray: iData[] = [
       mobile: weatherAppMobile,
     },
     devicons: {
-      HTML: true,
-      CSS: true,
-      TLWNDCSS: true,
-      TS: true,
-      JS: true,
-      REACT: true,
-      FRBS: false,
-      ND: false,
-      NPM: false,
-      GIT: true,
-      JEST: false,
-      WEBPACK: false,
-      FRAMER: false,
-      CYPRESS: false,
-      RTL: false,
+      icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","NPM","GIT"] ,
       dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
     },
   },
   {
     name: "Ticketmaster",
     details: (
-      <span>
+      <p>
         E-commerce frontend web application with a fully functioning shopping
         cart, product detail pages, and landing page.
         <span className="font-bold text-amber-400"> Tiketmaster API </span>
         Allows an user to search in a large online database of Artist and
         Concerts available live on the Ticketmaster platform
-      </span>
+      </p>
     ),
     href: {
       githubLiveHref: "https://snt85c.github.io/Shopping-Cart/",
@@ -108,36 +80,22 @@ export const projectModuleDataArray: iData[] = [
       mobile: TicketmasterApiMobile,
     },
     devicons: {
-      HTML: true,
-      CSS: true,
-      TLWNDCSS: true,
-      TS: false,
-      JS: true,
-      REACT: true,
-      FRBS: false,
-      ND: false,
-      NPM: true,
-      GIT: true,
-      JEST: false,
-      WEBPACK: true,
-      FRAMER: false,
-      CYPRESS: false,
-      RTL: false,
+      icons: ["HTML","CSS","TailwindCSS","Javascript","React","Firebase","NPM","GIT","Webpack"] ,
       dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
     },
   },
   {
     name: "Task Manager",
     details: (
-      <span>
-        TODO application styled with a win98 CSS. Created from the base up in{" "}
+      <p>
+        TODO application styled with win98 CSS rules. Created from the base up in{" "}
         <span className="text-amber-400 font-bold">
           Test Driven Development (TDD)
         </span>{" "}
         to demonstrate full testing capabilities with{" "}
         <span className="text-amber-400 font-bold">React Testing Library</span>{" "}
         and <span className="text-amber-400 font-bold">Cypress</span>
-      </span>
+      </p>
     ),
     href: {
       githubLiveHref: "https://unittestingapp-2e18e.web.app/",
@@ -150,22 +108,8 @@ export const projectModuleDataArray: iData[] = [
       mobile: TaskMngrMobile,
     },
     devicons: {
-      HTML: true,
-      CSS: true,
-      TLWNDCSS: true,
-      TS: true,
-      JS: true,
-      REACT: true,
-      FRBS: true,
-      ND: false,
-      NPM: true,
-      GIT: true,
-      JEST: true,
-      WEBPACK: false,
-      FRAMER: false,
-      CYPRESS: true,
-      RTL: true,
-      dependencies: ["react-testing-library", "cypress", "98.css"],
+      icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","Firebase","GIT","Framer-Motion","Jest","React testing-library","Cypress"] ,
+      dependencies: ["98.css"],
     },
   },
 ];
@@ -174,22 +118,8 @@ export const ContactPageData: iData = {
   name: "Contact Page",
   details: <></>,
   devicons: {
-    HTML: true,
-    CSS: true,
-    TLWNDCSS: true,
-    TS: true,
-    JS: true,
-    REACT: true,
-    FRBS: false,
-    ND: false,
-    NPM: false,
-    GIT: true,
-    JEST: false,
-    WEBPACK: false,
-    FRAMER: true,
-    CYPRESS: false,
-    RTL: false,
-    dependencies: ["react-intersection-observer", "vanta.js"],
+    icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","GIT","Webpack","Framer-Motion"] ,
+    dependencies: ["vanta.js"],
   },
   img: {
     desktop: "",
@@ -207,21 +137,7 @@ export interface iData {
   name: string;
   details: JSX.Element;
   devicons: {
-    HTML: boolean;
-    CSS: boolean;
-    TLWNDCSS: true;
-    TS: boolean;
-    JS: boolean;
-    REACT: boolean;
-    FRBS: boolean;
-    ND: boolean;
-    NPM: boolean;
-    GIT: boolean;
-    JEST: boolean;
-    WEBPACK: boolean;
-    FRAMER: boolean;
-    CYPRESS: boolean;
-    RTL: boolean;
+    icons:string[],
     dependencies: string[];
   };
   href: {
@@ -248,20 +164,6 @@ export interface iHref {
 }
 
 export interface iDevicons {
-  HTML: boolean;
-  CSS: boolean;
-  TLWNDCSS: true;
-  TS: boolean;
-  JS: boolean;
-  REACT: boolean;
-  FRBS: boolean;
-  ND: boolean;
-  NPM: boolean;
-  GIT: boolean;
-  JEST: boolean;
-  WEBPACK: boolean;
-  FRAMER: boolean;
-  CYPRESS: boolean;
-  RTL: boolean;
+  icons:string[]
   dependencies: string[];
 }

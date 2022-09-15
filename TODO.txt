@@ -1,9 +1,30 @@
-fix margins between components, add threshold of .5 in useInView for ProjectModule, change manifest.json
+major refactoring after feedback request on reddit
 
-it was noted that the margins between page components can create issues so they were standardized since they were off from first implementation. all the margins in every component have been removed and now App.tsx container for all the components is set to be flex column with a gap of 5.
 
-there is now a threshold of .05 in the useInView for ProjectModule, this way the animation wont be triggered when on mobile, since it appears that the snap align is not perfeclty centered depending on the type of browser used
+this component is created to isolate the map and render logic that was initially in App.tsx and keep the separation of concern. PorjectModuleList is to be considered a wrapper component that sole purpose it to map trought an array of iData to generate an array of JSX.Element
 
-manfest.json has been changed. icons have been removed, bgcolor is now black, text hopefully white
+new email has been added in contact.
 
-AboutMe has been changed to have all the components inside the AbouMeCard
+readme.md updated with new information
+
+-remove transparency of cards: feedback revealed that cards with transparency are bad for the UX as it tends to distract the reader, so the transparency has been removed in every card.
+
+AbourMe bg image has been changed with a similar one (the navbar from the image  is now not visible) with muted color and lower luminosity: the card is set now not to have transparency and backgroundSize:cover
+
+-remove linear gradient: linear gradient on ProjectModule has been removed to keep a uniform style between pages and it has been set now to white
+
+-set image widith and height to be a certain percentage of the window.innerHeight and window.innerWidth. this i thanks to the useWindowSize function in Services.jsx which listens to any resize and return the new inner size. this is then divided by a certain amount depending on mobile or desktop
+
+-devicons are bigger and will show a text on hover: useWindowSize is used to get right size for the screen size. in order to make the project scalable for the future, the <path> is stored in an array and then consumed by a filter (to see if the data is available in the item we are putting on screen, iDevicons in projectModuleDataPackage has been refactored to do so, see below) and a map(to return an item with the desired path.) given that the icons were taken from different sources, there is a switch that will decide if return an icon with the path from a iconify item or devicons item. a flair text with the name of the icon is added. when the group is hovered, the icon is lifted up and the text appears with 300ms duration
+
+projectModuleDataPackage has been refactored: the devicons key has been changed from a list of key:boolean to string[] so that i can just add a string of names without having to specify true or false eg: ["HTML", "CSS"] instead of {HTML:true, CSS:true}
+
+remove flair text: flair text has been removed as it was legacy from the first iteration and no loger needed
+
+text size has been fixed to have different vw amount for different breakpoints
+
+removes intersection observer for useInView from framer-motion, simplify logic for isInView by removing the useEffect that would listen to the useView and then update the ref. now the animation is simplified as it makes use of framer motion own implementation
+
+snap-center has been changed to sm:snap-center: this way the snap-center works only for bigger screen and not on mobile. it was noted that on mobile it would create problem given the different size of the viewport vs window.innerHeight and how having an event listener to determine the innerHeight on resize (which happens on mobile frequently) was producing janky animations and i couldn't fix it. it has been decided instead to remove it from mobile, given that a good number of people complained that forcing the scroll is not always a good idea 
+
+changes the information in Readme.md to reflect changes with ProjectModule where necessary

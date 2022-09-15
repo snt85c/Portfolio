@@ -7,8 +7,8 @@ export default function CVButton() {
   }
   return (
     //to be converted to <a></> when a cv is available
-    <div
-      className="flex items-center min-w-[200px] gap-2 px-6 py-1 m-5 border rounded-full border-white text-[1rem]  font-semibold"
+    <button
+      className="flex items-center min-w-[200px] text-[1rem] sm:text-[1.5vw] gap-2 px-6 py-1 m-5 border rounded-full border-white text-black hover:text-white duration-300 font-semibold "
       //   href=""
       //   target={"_blank"}
       onClick={telegramAlert}
@@ -17,6 +17,6 @@ export default function CVButton() {
       <span className="text-red-600">
         <FaFilePdf />
       </span>
-    </div>
+    </button>
   );
 }

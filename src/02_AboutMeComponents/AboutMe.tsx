@@ -1,56 +1,34 @@
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { useLayoutEffect, useRef, useState } from "react";
 import "../App.css";
-import FlairText from "./flairText";
 import bg from "./bg.png";
+import bg2 from "./bg2.png";
+
 import AboutMeCard from "./AboutMeCard";
 import ScrollDown from "../00_SharedComponents/ScrollDown";
 
 export default function AboutMe() {
-  const control = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0, delay: 0 });
-  const isAlreadyVisited = useRef(false);
-
-  const firstModuleVariant = {
-    visible: { x: "0", opacity: 1 },
-  };
-
-  useEffect(() => {
-    let abortController = new AbortController();
-    //if intersection-observer determines that inView is true or isAlreadyVisited state is true, then set it to variant/visible, then set isAlreadyVisited to true after 2000ms. This allows for the animation to happen only once during the first render.
-    if (inView || isAlreadyVisited.current) {
-      control.start("visible");
-      setTimeout(() => {
-        isAlreadyVisited.current = true;
-      }, 2000);
-    }
-    return abortController.abort();
-  }, [inView]);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin:"300px 0px 0px 0px" });
 
   return (
     <>
       <motion.div
-        initial={{ x: "-100%", opacity: 0 }}
-        //initially is hidden
         ref={ref}
-        //useInView needs to know which div is referring to
-        variants={firstModuleVariant}
-        //sets multiple choices of animation, in this case only one as initial will suffice for the start
-        animate={control}
-        //control is dependent on the variant
+        initial={{ x: "-100%", opacity: 0 }}
+        animate={isInView ? { x: "0", opacity: 1 } : {}}
         transition={{ type: "tween", duration: 0.8 }}
-        //tween is a simple slide animation, no bounce
-        className="flex flex-col justify-center items-center min-h-screen pt-5 pb-2 bg-black text-white text-[2rem] select-none  "
-        //
+        className="flex flex-col justify-center items-center min-h-screen pt-5 pb-2 bg-black text-white text-[2rem] select-none"
         style={{
-          backgroundImage: `url(${bg})`,
-          objectFit: "cover",
+          backgroundImage: `url(${bg2})`,
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
       >
         <AboutMeCard />
-        <ScrollDown />
+        <div className="sm:absolute bottom-5 right-10">
+          <ScrollDown />
+        </div>
       </motion.div>
     </>
   );
