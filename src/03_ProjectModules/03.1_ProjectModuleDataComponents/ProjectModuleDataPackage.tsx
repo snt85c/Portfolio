@@ -6,8 +6,35 @@ import weatherAppDesktop from "./weatherAppDesktop.png";
 import weatherAppMobile from "./weatherAppMobile.png";
 import TaskMngrMobile from "./TaskMngrMobile.png";
 import taskMngerDesktop from "./TaskMngrDesktop.png";
+import tcgStockDesktop from "./TCGStockDesktop.png"
+import tcgStockMobile from "./TCGStockMobile.png"
+
 
 export const projectModuleDataArray: iData[] = [
+  {
+    name: "TCG-Stock",
+    details: (
+      <p>
+         Commissioned Minimum Viable Product
+         <span className="font-bold text-amber-400"> (MVP)</span> Mobile App to keep accounting on Pokemon cards values from an API. Stores multiple collections and shows trending of values
+        
+      </p>
+    ),
+    href: {
+      githubLiveHref: "https://www.tcgstock.me",
+      showLive: true,
+      githubCodeHref: "",
+      showCode: false,
+    },
+    img: {
+      desktop: tcgStockDesktop,
+      mobile: tcgStockMobile,
+    },
+    devicons: {
+      icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
+      dependencies: ["pokemontcg.io","zustand"],
+    },
+  },
   {
     name: "Travel Organizer",
     details: (

@@ -26,7 +26,7 @@ export default function AboutMe() {
         }}
       >
         <AboutMeCard />
-        <div className="sm:absolute bottom-5 right-10">
+        <div className="absolute bottom-5 sm:right-10">
           <ScrollDown />
         </div>
       </motion.div>
