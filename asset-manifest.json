@@ -1,12 +1,14 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4d679be5.css",
-    "main.js": "/Portfolio/static/js/main.3a16d51c.js",
+    "main.js": "/Portfolio/static/js/main.118fcbf6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/weatherAppDesktop.png": "/Portfolio/static/media/weatherAppDesktop.791aa6e0b6a97d425526.png",
     "static/media/ticketmasterApiDesktop.png": "/Portfolio/static/media/ticketmasterApiDesktop.61dbd02ef007908b1817.png",
     "static/media/GTAlpinaFineRegularItalic.ttf": "/Portfolio/static/media/GTAlpinaFineRegularItalic.f022ca064f98a98d1089.ttf",
     "static/media/weatherAppMobile.png": "/Portfolio/static/media/weatherAppMobile.3cbb0e574b905ae125e9.png",
+    "static/media/TCGStockMobile.png": "/Portfolio/static/media/TCGStockMobile.af7ca8f672ea1aa723db.png",
+    "static/media/TCGStockDesktop.png": "/Portfolio/static/media/TCGStockDesktop.27c93dd1a1f89c8dda35.png",
     "static/media/bg2.png": "/Portfolio/static/media/bg2.0f46f2294c1194410563.png",
     "static/media/ticketmasterApiMobile.png": "/Portfolio/static/media/ticketmasterApiMobile.f3ed7f35e2c442bfbc58.png",
     "static/media/TravelOrgDesktop.png": "/Portfolio/static/media/TravelOrgDesktop.249dfc2b11cb4b1cbe52.png",
@@ -15,11 +17,11 @@
     "static/media/TaskMngrMobile.png": "/Portfolio/static/media/TaskMngrMobile.6cbd43d21481c53d96c2.png",
     "index.html": "/Portfolio/index.html",
     "main.4d679be5.css.map": "/Portfolio/static/css/main.4d679be5.css.map",
-    "main.3a16d51c.js.map": "/Portfolio/static/js/main.3a16d51c.js.map",
+    "main.118fcbf6.js.map": "/Portfolio/static/js/main.118fcbf6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d679be5.css",
-    "static/js/main.3a16d51c.js"
+    "static/js/main.118fcbf6.js"
   ]
 }
