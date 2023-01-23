@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
-import { useLayoutEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import "../App.css";
-import bg from "./bg.png";
 import bg2 from "./bg2.png";
 
 import AboutMeCard from "./AboutMeCard";

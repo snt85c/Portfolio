@@ -23,8 +23,8 @@ export const projectModuleDataArray: iData[] = [
     href: {
       githubLiveHref: "https://www.tcgstock.me",
       showLive: true,
-      githubCodeHref: "",
-      showCode: false,
+      githubCodeHref: "https://github.com/snt85c/PokemonTCGStock",
+      showCode: true,
     },
     img: {
       desktop: tcgStockDesktop,
@@ -33,6 +33,28 @@ export const projectModuleDataArray: iData[] = [
     devicons: {
       icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
       dependencies: ["pokemontcg.io","zustand"],
+    },
+  },
+  {
+    name: "Ticketmaster",
+    details: (
+      <p>
+        E-commerce frontend web application with a fully functioning shopping cart, product detail pages, and landing page using <span className="font-bold text-amber-400">Redux</span> for state management. <span className="font-bold text-amber-400">Tiketmaster API</span> allows an user to search in a large online database of Artist and Concerts available live on the Ticketmaster platform.
+      </p>
+    ),
+    href: {
+      githubLiveHref: "https://snt85c.github.io/Shopping-Cart/",
+      showLive: true,
+      githubCodeHref: "https://github.com/snt85c/shopping-cart/",
+      showCode: true,
+    },
+    img: {
+      desktop: TicketmasterApiDesktop,
+      mobile: TicketmasterApiMobile,
+    },
+    devicons: {
+      icons: ["HTML","CSS","TailwindCSS","Javascript","React","Redux","Firebase","NPM","GIT"] ,
+      dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
     },
   },
   {
@@ -83,32 +105,6 @@ export const projectModuleDataArray: iData[] = [
     devicons: {
       icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","NPM","GIT"] ,
       dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
-    },
-  },
-  {
-    name: "Ticketmaster",
-    details: (
-      <p>
-        E-commerce frontend web application with a fully functioning shopping
-        cart, product detail pages, and landing page.
-        <span className="font-bold text-amber-400"> Tiketmaster API </span>
-        Allows an user to search in a large online database of Artist and
-        Concerts available live on the Ticketmaster platform
-      </p>
-    ),
-    href: {
-      githubLiveHref: "https://snt85c.github.io/Shopping-Cart/",
-      showLive: true,
-      githubCodeHref: "https://github.com/snt85c/shopping-cart/",
-      showCode: true,
-    },
-    img: {
-      desktop: TicketmasterApiDesktop,
-      mobile: TicketmasterApiMobile,
-    },
-    devicons: {
-      icons: ["HTML","CSS","TailwindCSS","Javascript","React","Firebase","NPM","GIT","Webpack"] ,
-      dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
     },
   },
   {

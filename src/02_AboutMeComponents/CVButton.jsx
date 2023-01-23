@@ -1,4 +1,5 @@
 import { FaFilePdf } from "react-icons/fa";
+import CV from "./CV Santi Cacciola.pdf"
 export default function CVButton() {
   function telegramAlert() {
     fetch(
@@ -13,7 +14,7 @@ export default function CVButton() {
       //   target={"_blank"}
       onClick={telegramAlert}
     >
-      <span>Check my CV</span>{" "}
+      <a href={CV} download>Check my CV</a>{" "}
       <span className="text-red-600">
         <FaFilePdf />
       </span>
