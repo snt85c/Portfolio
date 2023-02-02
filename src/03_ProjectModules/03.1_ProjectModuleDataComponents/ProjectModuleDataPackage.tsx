@@ -11,30 +11,7 @@ import tcgStockMobile from "./TCGStockMobile.png"
 
 
 export const projectModuleDataArray: iData[] = [
-  {
-    name: "TCG-Stock",
-    details: (
-      <p>
-         Commissioned Minimum Viable Product
-         <span className="font-bold text-amber-400"> (MVP)</span> Mobile App to keep accounting on Pokemon cards values from an API. Stores multiple collections and shows trending of values
-        
-      </p>
-    ),
-    href: {
-      githubLiveHref: "https://www.tcgstock.me",
-      showLive: true,
-      githubCodeHref: "https://github.com/snt85c/PokemonTCGStock",
-      showCode: true,
-    },
-    img: {
-      desktop: tcgStockDesktop,
-      mobile: tcgStockMobile,
-    },
-    devicons: {
-      icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
-      dependencies: ["pokemontcg.io","zustand"],
-    },
-  },
+  
   {
     name: "Ticketmaster",
     details: (
@@ -80,6 +57,30 @@ export const projectModuleDataArray: iData[] = [
     devicons: {
       icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","Firebase","NPM","GIT","Webpack","Framer-Motion"] ,
       dependencies: ["react-swipeable", "daisyui"],
+    },
+  },
+  {
+    name: "TCG-Stock",
+    details: (
+      <p>
+         Commissioned Minimum Viable Product
+         <span className="font-bold text-amber-400"> (MVP)</span> Mobile App to keep accounting on Pokemon cards values from an API. Stores multiple collections and shows trending of values
+        
+      </p>
+    ),
+    href: {
+      githubLiveHref: "https://www.tcgstock.me",
+      showLive: true,
+      githubCodeHref: "https://github.com/snt85c/PokemonTCGStock",
+      showCode: true,
+    },
+    img: {
+      desktop: tcgStockDesktop,
+      mobile: tcgStockMobile,
+    },
+    devicons: {
+      icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
+      dependencies: ["pokemontcg.io","zustand"],
     },
   },
   {
