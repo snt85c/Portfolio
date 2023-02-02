@@ -51,7 +51,7 @@ export default function ProjectModule(props: { data: iData; number: number }) {
                 <span className="text-[1rem] sm:text-[1.5vw]">
                   {props.data?.details}
                 </span>
-                <GitHubLinks href={props.data?.href} />
+                <GitHubLinks data={props.data} />
               </div>
             </div>
           </div>

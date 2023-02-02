@@ -48,7 +48,7 @@ export default function ContactPage(props: { data: iData }) {
             <span className=" text-gray-800 text-[0.6rem] sm:text-[1vw] -mb-1 select-none">
               how was this page made?
             </span>
-            <GitHubLinks href={props.data.href} />
+            <GitHubLinks data={props.data} />
             <Devicons icons={props.data.devicons} />
           </div>
         </div>
