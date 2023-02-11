@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2e6f12ea.css",
-    "main.js": "/Portfolio/static/js/main.48812de5.js",
+    "main.js": "/Portfolio/static/js/main.d04aa872.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/AmoralDesktop.png": "/Portfolio/static/media/AmoralDesktop.de91edaacd444b19d640.png",
     "static/media/weatherAppDesktop.png": "/Portfolio/static/media/weatherAppDesktop.791aa6e0b6a97d425526.png",
@@ -13,16 +13,16 @@
     "static/media/TCGStockDesktop.png": "/Portfolio/static/media/TCGStockDesktop.27c93dd1a1f89c8dda35.png",
     "static/media/bg2.png": "/Portfolio/static/media/bg2.0f46f2294c1194410563.png",
     "static/media/ticketmasterApiMobile.png": "/Portfolio/static/media/ticketmasterApiMobile.f3ed7f35e2c442bfbc58.png",
-    "static/media/CV Santi Cacciola.pdf": "/Portfolio/static/media/CV Santi Cacciola.246c210b9bebc339a457.pdf",
+    "static/media/CV Santi Cacciola.pdf": "/Portfolio/static/media/CV Santi Cacciola.b26c9624864be2e286ed.pdf",
     "static/media/TaskMngrDesktop.png": "/Portfolio/static/media/TaskMngrDesktop.e5d6513b73780cf9db4b.png",
     "static/media/TaskMngrMobile.png": "/Portfolio/static/media/TaskMngrMobile.6cbd43d21481c53d96c2.png",
     "index.html": "/Portfolio/index.html",
     "main.2e6f12ea.css.map": "/Portfolio/static/css/main.2e6f12ea.css.map",
-    "main.48812de5.js.map": "/Portfolio/static/js/main.48812de5.js.map",
+    "main.d04aa872.js.map": "/Portfolio/static/js/main.d04aa872.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2e6f12ea.css",
-    "static/js/main.48812de5.js"
+    "static/js/main.d04aa872.js"
   ]
 }
