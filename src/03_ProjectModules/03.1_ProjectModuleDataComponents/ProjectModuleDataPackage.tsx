@@ -1,5 +1,3 @@
-import TravelOrgMobile from "./TravelOrgMobile.png";
-import TravelOrgDesktop from "./TravelOrgDesktop.png";
 import TicketmasterApiDesktop from "./ticketmasterApiDesktop.png";
 import TicketmasterApiMobile from "./ticketmasterApiMobile.png";
 import weatherAppDesktop from "./weatherAppDesktop.png";
@@ -8,7 +6,8 @@ import TaskMngrMobile from "./TaskMngrMobile.png";
 import taskMngerDesktop from "./TaskMngrDesktop.png";
 import tcgStockDesktop from "./TCGStockDesktop.png"
 import tcgStockMobile from "./TCGStockMobile.png"
-
+import amoralDesktop from "./AmoralDesktop.png"
+import amoralmobile from "./AmoralMobile.png"
 
 export const projectModuleDataArray: iData[] = [
   
@@ -35,28 +34,25 @@ export const projectModuleDataArray: iData[] = [
     },
   },
   {
-    name: "Travel Organizer",
+    name: "AMORALskateboards",
     details: (
       <p>
-        CRUD application which use Firebase to authenticate and store a database
-        of documents for each users. Created to have a{" "}
-        <span className="font-bold text-amber-400">'Mobile App' feeling</span>{" "}
-        by incorporating swipe gestures to delete or highlight single entries
+        "Commissioned <span className="font-bold text-amber-400">Next.js</span>-powered skateboard producer website with modern design and features. Utilized  <span className="font-bold text-amber-400">Sanity CMS</span> to allow the client to modify the content. Focused on user experience, scalability, SEO, and ease of maintenance. Hosted on <span className="font-bold text-amber-400">Vercel</span>
       </p>
     ),
     href: {
-      githubLiveHref: "https://snt85c.github.io/TravelOrganizer/",
+      githubLiveHref: "https://amoralskateboards.com",
       showLive: true,
-      githubCodeHref: "https://github.com/snt85c/TravelOrganizer",
+      githubCodeHref: "https://github.com/snt85c/amoralskateboards",
       showCode: true,
     },
     img: {
-      desktop: TravelOrgDesktop,
-      mobile: TravelOrgMobile,
+      desktop: amoralDesktop,
+      mobile: amoralmobile,
     },
     devicons: {
-      icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","Firebase","NPM","GIT","Webpack","Framer-Motion"] ,
-      dependencies: ["react-swipeable", "daisyui"],
+      icons: ["HTML","CSS","TailwindCSS","Typescript","ReactJS","NextJS","NPM","GIT","Sanity","Vercel","Framer-Motion"] ,
+      dependencies: [ "Vercel", "Sanity"],
     },
   },
   {

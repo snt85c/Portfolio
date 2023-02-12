@@ -25,7 +25,7 @@ export default function ProjectModule(props: { data: iData; number: number }) {
         >
           <div></div>
           <div className="flex flex-col sm:mx-5 relative sm:p-10 gap-20 sm:bg-gray-500/50 rounded-md">
-            <div className="flex sm:flex-row flex-col justify-center items-center">
+            <div className="flex sm:flex-row flex-col justify-center items-center ">
               {props.data.img.desktop && (
                 <>
                   <img
@@ -44,7 +44,7 @@ export default function ProjectModule(props: { data: iData; number: number }) {
                   />
                 </>
               )}
-              <div className="flex flex-col items-center justify-center gap-5 -mt-[5rem] sm:mt-0 sm:-ml-[20rem] z-20 text-[3vw] sm:text-[1rem] w-[100%] sm:w-[50%] p-5 bg-slate-500 duration-300 text-white shadow-lg">
+              <div className="flex flex-col items-center justify-center gap-5 -mt-[5rem] sm:mt-0 sm:-ml-[20rem] z-20 text-[3vw] sm:text-[1rem] w-[100%] sm:w-[50%] p-5 bg-slate-500 duration-300 text-white shadow-lg shadow-slate-900">
                 <div className="font-extrabold text text-[6vw] sm:text-[2vw] -mb-5]">
                   {props.data?.name}
                 </div>

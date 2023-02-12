@@ -14,7 +14,7 @@ export default function PresentationModule() {
         `https://api.telegram.org/bot5531898247:AAG8rxOFIKmlwS6PYBVTuXdTGMqIaSpl5eE/sendMessage?chat_id=231233238&text=new visit to Portfolio: ${new Date()} `
       );
     }
-    telegramAlert();
+    if (process.env.NODE_ENV !== "development") telegramAlert();
   }, []);
 
   return (
