@@ -179,6 +179,19 @@ export default function Devicons(props: { icons: iDevicons }) {
       type: "iconify",
     },
     {
+      path: <Icon icon="logos:stripe" width={SIZE} height={SIZE} />,
+      name: "Stripe",
+      src: "https://www.stripe.com/",
+      type: "iconify",
+    },
+    {
+      path: <Icon icon="logos:google-maps" width={SIZE} height={SIZE} />,
+      name: "GoogleMaps",
+      src: "",
+      type: "iconify",
+    },
+    
+    {
       path: <Icon icon="logos:sanity" width={SIZE} height={SIZE} />,
       name: "Sanity",
       src: "https://www.sanity.io/",

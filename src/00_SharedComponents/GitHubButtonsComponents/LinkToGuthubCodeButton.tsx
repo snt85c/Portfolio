@@ -14,7 +14,7 @@ export default function LinkToGithubCodeButton(props: {
       onClick={()=>props.alert(props.data.name,"code")}
 
     >
-      See the code <BsGithub />
+      See the Code <BsGithub />
     </a>
   );
 }

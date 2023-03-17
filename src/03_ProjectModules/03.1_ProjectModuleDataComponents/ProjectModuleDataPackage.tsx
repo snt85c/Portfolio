@@ -8,36 +8,40 @@ import tcgStockDesktop from "./TCGStockDesktop.png"
 import tcgStockMobile from "./TCGStockMobile.png"
 import amoralDesktop from "./AmoralDesktop.png"
 import amoralmobile from "./AmoralMobile.png"
+import CWLDesktop from "./CWLDesktop.png"
+import CWLMobile from "./CWLMobile.png"
+
 
 export const projectModuleDataArray: iData[] = [
-  
+
   {
-    name: "Ticketmaster",
+    name: "Concrete Waves London",
     details: (
       <p>
-        E-commerce frontend web application with a fully functioning shopping cart, product detail pages, and landing page using <span className="font-bold text-amber-400">Redux</span> for state management. <span className="font-bold text-amber-400">Tiketmaster API</span> allows an user to search in a large online database of Artist and Concerts available live on the Ticketmaster platform.
+       Commisioned Next.js e-commerce website with <span className="font-bold text-amber-400">Stripe</span>, custom maps, and engaging articles. The client can easily manage the content through <span className="font-bold text-amber-400">Sanity CMS</span>. The website is designed to be <span className="font-bold text-amber-400">SEO</span> ready, ensuring optimal visibility and increased traffic.
       </p>
     ),
     href: {
-      githubLiveHref: "https://snt85c.github.io/Shopping-Cart/",
+      githubLiveHref: "https://concretewaveslondon-git-v1-snt85c.vercel.app/",
       showLive: true,
-      githubCodeHref: "https://github.com/snt85c/shopping-cart/",
+      githubCodeHref: "https://github.com/snt85c/concretewaveslondon",
       showCode: true,
     },
     img: {
-      desktop: TicketmasterApiDesktop,
-      mobile: TicketmasterApiMobile,
+      desktop: CWLDesktop,
+      mobile: CWLMobile,
     },
     devicons: {
-      icons: ["HTML","CSS","TailwindCSS","Javascript","React","Redux","Firebase","NPM","GIT"] ,
-      dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
+      icons: ["HTML","CSS","TailwindCSS","Javascript","Typescript","NextJS","Redux","Stripe","Sanity","GoogleMaps","Vercel","Firebase"] ,
+      dependencies: ["google-maps-api","stripe-components", "next-seo"],
     },
   },
+  
   {
     name: "AMORALskateboards",
     details: (
       <p>
-        "Commissioned <span className="font-bold text-amber-400">Next.js</span>-powered skateboard producer website with modern design and features. Utilized  <span className="font-bold text-amber-400">Sanity CMS</span> to allow the client to modify the content. Focused on user experience, scalability, SEO, and ease of maintenance. Hosted on <span className="font-bold text-amber-400">Vercel</span>
+        Commissioned <span className="font-bold text-amber-400">Next.js</span>-powered skateboard producer website with modern design and features. Utilized  <span className="font-bold text-amber-400">Sanity CMS</span> to allow the client to modify the content. Focused on user experience, scalability, SEO, and ease of maintenance. Hosted on <span className="font-bold text-amber-400">Vercel</span>
       </p>
     ),
     href: {
@@ -56,52 +60,25 @@ export const projectModuleDataArray: iData[] = [
     },
   },
   {
-    name: "TCG-Stock",
+    name: "Ticketmaster",
     details: (
       <p>
-         Commissioned Minimum Viable Product
-         <span className="font-bold text-amber-400"> (MVP)</span> Mobile App to keep accounting on Pokemon cards values from an API. Stores multiple collections and shows trending of values
-        
+        E-commerce frontend web application with products detail pages, and landing page using <span className="font-bold text-amber-400">Redux</span> for state management. <span className="font-bold text-amber-400">Tiketmaster API</span> allows an user to search in a large online database of Artist and Concerts available live on the Ticketmaster platform.
       </p>
     ),
     href: {
-      githubLiveHref: "https://www.tcgstock.me",
+      githubLiveHref: "https://snt85c.github.io/Shopping-Cart/",
       showLive: true,
-      githubCodeHref: "https://github.com/snt85c/PokemonTCGStock",
+      githubCodeHref: "https://github.com/snt85c/shopping-cart/",
       showCode: true,
     },
     img: {
-      desktop: tcgStockDesktop,
-      mobile: tcgStockMobile,
+      desktop: TicketmasterApiDesktop,
+      mobile: TicketmasterApiMobile,
     },
     devicons: {
-      icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
-      dependencies: ["pokemontcg.io","zustand"],
-    },
-  },
-  {
-    name: "Weather App",
-    details: (
-      <p>
-        Typescript web app that collect data from user geolocation or user input
-        and gives back 7 hours or 7 days forecast. Fully{" "}
-        <span className="font-bold text-amber-400">responsive for mobile</span>,
-        with easy to handle swipe action to toggle between datasets
-      </p>
-    ),
-    href: {
-      githubLiveHref: "https://snt85c.github.io/Weather-App-React-TS/",
-      showLive: true,
-      githubCodeHref: "https://github.com/snt85c/Weather-App-React-TS",
-      showCode: true,
-    },
-    img: {
-      desktop: weatherAppDesktop,
-      mobile: weatherAppMobile,
-    },
-    devicons: {
-      icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","NPM","GIT"] ,
-      dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
+      icons: ["HTML","CSS","TailwindCSS","Javascript","React","Redux","Firebase","NPM","GIT"] ,
+      dependencies: ["daisyui", "react-router-dom", "TicketmasterAPI"],
     },
   },
   {
@@ -132,6 +109,56 @@ export const projectModuleDataArray: iData[] = [
       dependencies: ["98.css"],
     },
   },
+  {
+    name: "TCG-Stock",
+    details: (
+      <p>
+         Commissioned Minimum Viable Product
+         <span className="font-bold text-amber-400"> (MVP)</span> Mobile App to keep accounting on Pokemon cards values from an API. Stores multiple collections and shows trending of values
+        
+      </p>
+    ),
+    href: {
+      githubLiveHref: "https://www.tcgstock.me",
+      showLive: true,
+      githubCodeHref: "https://github.com/snt85c/PokemonTCGStock",
+      showCode: true,
+    },
+    img: {
+      desktop: tcgStockDesktop,
+      mobile: tcgStockMobile,
+    },
+    devicons: {
+      icons: ["TailwindCSS","Typescript","Javascript","React","Firebase", "Framer-Motion"] ,
+      dependencies: ["pokemontcg.io","zustand"],
+    },
+  },
+  // {
+  //   name: "Weather App",
+  //   details: (
+  //     <p>
+  //       Typescript web app that collect data from user geolocation or user input
+  //       and gives back 7 hours or 7 days forecast. Fully{" "}
+  //       <span className="font-bold text-amber-400">responsive for mobile</span>,
+  //       with easy to handle swipe action to toggle between datasets
+  //     </p>
+  //   ),
+  //   href: {
+  //     githubLiveHref: "https://snt85c.github.io/Weather-App-React-TS/",
+  //     showLive: true,
+  //     githubCodeHref: "https://github.com/snt85c/Weather-App-React-TS",
+  //     showCode: true,
+  //   },
+  //   img: {
+  //     desktop: weatherAppDesktop,
+  //     mobile: weatherAppMobile,
+  //   },
+  //   devicons: {
+  //     icons: ["HTML","CSS","TailwindCSS","Typescript","Javascript","React","NPM","GIT"] ,
+  //     dependencies: ["openWeaterMap", "react-swipeable", "daisyui"],
+  //   },
+  // },
+ 
 ];
 
 export const ContactPageData: iData = {

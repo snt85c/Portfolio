@@ -13,7 +13,7 @@ export default function LinkToGithubLiveButton(props: {
       rel="noreferrer"
       onClick={() => props.alert(props.data.name, "live")}
     >
-      see the demo <BsFillPlayCircleFill />
+      See the Page <BsFillPlayCircleFill />
     </a>
   );
 }
