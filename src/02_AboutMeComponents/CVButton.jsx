@@ -8,7 +8,6 @@ export default function CVButton() {
       );
   }
   return (
-    //to be converted to <a></> when a cv is available
     <button
       className="flex items-center min-w-[200px] text-[1rem] sm:text-[1.5vw] gap-2 px-6 py-1 m-5 border rounded-full border-white text-black hover:text-white duration-300 font-semibold "
       //   href=""

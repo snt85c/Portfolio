@@ -286,7 +286,7 @@ export default function Devicons(props: { icons: iDevicons }) {
 
   return (
     <div className="flex flex-col">
-      <div className=" text-center text-black  font-[montserrat] select-none  text-[1rem] sm:text-[1.3vw]">
+      <div className=" text-center text-black  font-[montserrat] select-none  text-xs sm:text-[1.3vw] my-2">
         Created with:
       </div>
       <div className="flex justify-center items-center mb-3 text-white  ">

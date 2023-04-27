@@ -20,11 +20,11 @@ export default function ProjectModule(props: { data: iData; number: number }) {
           initial={{ x: -100, opacity: 0 }}
           animate={isInView ? { x: "0", opacity: 1 } : {}}
           transition={{ type: "spring", stiffness: 60, duration: 500 }}
-          className="flex flex-col justify-between items-center rounded-2xl bg-white text-black inset-0 px-5 select-none py-5"
+          className="flex flex-col justify-between items-center rounded-2xl bg-white text-black inset-0 px-5 select-none py-5 mx-1"
           style={{ minHeight: height }}
         >
           <div></div>
-          <div className="flex flex-col sm:mx-5 relative sm:p-10 gap-20 sm:bg-gray-500/50 rounded-md">
+          <div className="flex flex-col sm:mx-5 relative sm:p-10 gap-20 sm:bg-gray-400 rounded-md">
             <div className="flex sm:flex-row flex-col justify-center items-center ">
               {props.data.img.desktop && (
                 <>

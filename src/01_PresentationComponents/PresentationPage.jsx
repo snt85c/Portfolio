@@ -20,12 +20,13 @@ export default function PresentationModule() {
   return (
     <>
       <motion.div
+      layout
         ref={ref}
         initial={{ x: "-100%", opacity: 0 }}
         animate={isInView ? { x: "0", opacity: 1 } : {}}
         transition={{ type: "tween", duration: 0.8 }}
-        className="flex flex-col  justify-between border border-gray-500 
-           min-h-[100vh] pt-5 pb-2 mx-5 text-white text-[2rem] select-none"
+        className="flex flex-col justify-between border border-gray-500 
+           h-[100vh] w-screen pt-5 pb-2 text-white text-[2rem] select-none"
       >
         <VantaJsRingsBackgroundEffect />
         <div className="flex flex-row ">

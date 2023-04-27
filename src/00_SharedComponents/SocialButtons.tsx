@@ -23,7 +23,7 @@ export default function SocialButtons() {
           className="hover:text-amber-400 duration-300"
           />
         </a>
-        <a href="mailto:santi.cacciola@hotmail.it">
+        <a href="mailto:santi.cacciola.s@gmail.com">
           <SiGmail size={size} 
           className="hover:text-amber-400 duration-300"
           />

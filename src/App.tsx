@@ -7,20 +7,12 @@ import PresentationModule from "./01_PresentationComponents/PresentationPage";
 
 function App() {
   return (
-    <>
-      <div className="flex flex-col snap-y snap-mandatory gap-5">
-        <div className="sm:snap-center">
+      <div className="flex flex-col justify-center items-center gap-5">
           <PresentationModule />
-        </div>
-        <div className="sm:snap-center">
           <AboutMe />
-        </div>
-        <ProjectModulesList />
-        <div className="sm:snap-center">
+          <ProjectModulesList />
           <ContactPage data={ContactPageData} />
-        </div>
       </div>
-    </>
   );
 }
 

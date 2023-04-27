@@ -1,15 +1,13 @@
 import TicketmasterApiDesktop from "./ticketmasterApiDesktop.png";
 import TicketmasterApiMobile from "./ticketmasterApiMobile.png";
-import weatherAppDesktop from "./weatherAppDesktop.png";
-import weatherAppMobile from "./weatherAppMobile.png";
-import TaskMngrMobile from "./TaskMngrMobile.png";
 import taskMngerDesktop from "./TaskMngrDesktop.png";
 import tcgStockDesktop from "./TCGStockDesktop.png"
+import TaskMngrMobile from "./TaskMngrMobile.png";
 import tcgStockMobile from "./TCGStockMobile.png"
 import amoralDesktop from "./AmoralDesktop.png"
 import amoralmobile from "./AmoralMobile.png"
-import CWLDesktop from "./CWLDesktop.png"
-import CWLMobile from "./CWLMobile.png"
+import CWLDesktop from "./CWLDesktop.webp"
+import CWLMobile from "./CWLMobile.webp"
 
 
 export const projectModuleDataArray: iData[] = [
@@ -22,17 +20,17 @@ export const projectModuleDataArray: iData[] = [
       </p>
     ),
     href: {
-      githubLiveHref: "https://concretewaveslondon-git-v1-snt85c.vercel.app/",
+      githubLiveHref: "https://concretewaveslondon.com/",
       showLive: true,
-      githubCodeHref: "https://github.com/snt85c/concretewaveslondon",
-      showCode: true,
+      githubCodeHref: "",
+      showCode: false,
     },
     img: {
       desktop: CWLDesktop,
       mobile: CWLMobile,
     },
     devicons: {
-      icons: ["HTML","CSS","TailwindCSS","Javascript","Typescript","NextJS","Redux","Stripe","Sanity","GoogleMaps","Vercel","Firebase"] ,
+      icons: ["HTML","CSS","TailwindCSS","Javascript","Typescript","NextJS","Redux","Stripe","Sanity","GoogleMaps","Firebase"] ,
       dependencies: ["google-maps-api","stripe-components", "next-seo"],
     },
   },
