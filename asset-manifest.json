@@ -1,28 +1,26 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4185921c.css",
-    "main.js": "/Portfolio/static/js/main.97928897.js",
+    "main.js": "/Portfolio/static/js/main.5469847a.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/AmoralDesktop.png": "/Portfolio/static/media/AmoralDesktop.de91edaacd444b19d640.png",
     "static/media/ticketmasterApiDesktop.png": "/Portfolio/static/media/ticketmasterApiDesktop.61dbd02ef007908b1817.png",
     "static/media/AmoralMobile.png": "/Portfolio/static/media/AmoralMobile.f3092e524a14498e9449.png",
     "static/media/GTAlpinaFineRegularItalic.ttf": "/Portfolio/static/media/GTAlpinaFineRegularItalic.f022ca064f98a98d1089.ttf",
     "static/media/CWLDesktop.webp": "/Portfolio/static/media/CWLDesktop.6655558550308038b588.webp",
-    "static/media/TCGStockMobile.png": "/Portfolio/static/media/TCGStockMobile.af7ca8f672ea1aa723db.png",
-    "static/media/TCGStockDesktop.png": "/Portfolio/static/media/TCGStockDesktop.27c93dd1a1f89c8dda35.png",
     "static/media/bg2.png": "/Portfolio/static/media/bg2.0f46f2294c1194410563.png",
     "static/media/ticketmasterApiMobile.png": "/Portfolio/static/media/ticketmasterApiMobile.f3ed7f35e2c442bfbc58.png",
-    "static/media/CV Santi Cacciola.pdf": "/Portfolio/static/media/CV Santi Cacciola.ba22444059a2b2b6e666.pdf",
+    "static/media/CV Santi Cacciola.pdf": "/Portfolio/static/media/CV Santi Cacciola.f679ea20a0b534d569a6.pdf",
     "static/media/TaskMngrDesktop.png": "/Portfolio/static/media/TaskMngrDesktop.d740b99cdb679fb33247.png",
     "static/media/CWLMobile.webp": "/Portfolio/static/media/CWLMobile.2b6ece4df30ffdf4a5ec.webp",
     "static/media/TaskMngrMobile.png": "/Portfolio/static/media/TaskMngrMobile.6cbd43d21481c53d96c2.png",
     "index.html": "/Portfolio/index.html",
     "main.4185921c.css.map": "/Portfolio/static/css/main.4185921c.css.map",
-    "main.97928897.js.map": "/Portfolio/static/js/main.97928897.js.map",
+    "main.5469847a.js.map": "/Portfolio/static/js/main.5469847a.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4185921c.css",
-    "static/js/main.97928897.js"
+    "static/js/main.5469847a.js"
   ]
 }
